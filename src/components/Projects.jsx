@@ -12,11 +12,11 @@ function Projects() {
     })
 
     return (
-        <section id="projects" className="padding">
-            <h2>
-                <span className="primary-color">My Projects</span>
-            </h2>
-            {projectItemElements}
+        <section id='projects' className='padding'>
+            <h2 className='projects-header primary-color'>My Projects</h2>
+            <div className='project-container'>
+                {projectItemElements}
+            </div>
         </section>
     )
 }

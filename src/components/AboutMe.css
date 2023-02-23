@@ -16,7 +16,11 @@
     display: block;
 }
 
-@media (width >=768px) {
+.avatar-image {
+    width: 100%;
+}
+
+@media (width >=1024px) {
     section#about-me {
         display: flex;
         align-items: center;
@@ -26,10 +30,10 @@
 
     .avatar-image {
         order: -1;
-        max-width: 40%;
+        max-width: 35%;
     }
 
     .about-me-text p {
-        font-size: 1.35rem;
+        font-size: 1.125rem;
     }
 }

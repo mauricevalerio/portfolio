@@ -10,7 +10,7 @@ div.hero-image {
     width: 100%;
 }
 
-@media (width >=768px) {
+@media (width >=1024px) {
     section#hero {
         display: flex;
         align-items: center;

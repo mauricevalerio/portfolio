@@ -32,7 +32,7 @@ function AboutMe() {
                         {readMore ? 'Read more' : 'Read less'}
                 </span>
             </div>
-            <img src={avatarImage} alt="Avatar Image" className='avatar-image'/>
+            <img src={avatarImage} alt='Avatar Image' className='avatar-image'/>
         </section>
     )
 }

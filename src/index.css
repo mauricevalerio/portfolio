@@ -17,13 +17,13 @@ section.padding {
 h1 {
   margin: 0;
   font-size: 3rem;
-  font-size: clamp(48px, 10vw, 70px)
+  font-size: clamp(48px, 50%, 65px)
 }
 
 h2 {
   margin: 0;
   font-size: 2.5rem;
-  font-size: clamp(32px, 5vw, 60px)
+  font-size: clamp(32px, 50%, 55px)
 }
 
 .primary-color {
