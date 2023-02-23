@@ -1,0 +1,28 @@
+section#hero {
+    padding-top: 7.5em;
+}
+
+.title {
+    padding-bottom: 1rem;
+}
+
+div.hero-image {
+    width: 100%;
+}
+
+@media (width >=768px) {
+    section#hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .title {
+        padding-bottom: unset;
+    }
+
+    div.hero-image {
+        max-width: 50%;
+    }
+}

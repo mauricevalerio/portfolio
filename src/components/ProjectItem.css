@@ -1,0 +1,17 @@
+.project-item-container {
+    max-width: 350px;
+    height: 250px;
+    background: #DDD0C8;
+    border-radius: 16px;
+    margin-bottom: 1em;
+    box-shadow: 2px 2px 5px #323232;
+}
+
+h3 {
+    text-align: center;
+}
+
+a.project-title {
+    text-decoration: none;
+    color: #323232;
+}
