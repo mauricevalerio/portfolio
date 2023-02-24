@@ -1,7 +1,26 @@
 a.nav-link {
     text-decoration: none;
-    color: #323232;
-    font-size: 2rem;
+    font-size: 1.75rem;
+    position: relative;
+    transition: all 2s linear;
+}
+
+a.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--underline-color);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+a.nav-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .rotate-icon:hover {
@@ -37,18 +56,18 @@ a.nav-link {
     position: fixed;
     width: 40px;
     height: 30px;
-    right: 36px;
-    top: 36px;
+    right: 40px;
+    top: 40px;
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-    background: #323232;
+    background: var(--primary-color);
 }
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-    background: #006F75;
+    background: var(--primary-color);
 }
 
 /* Position and sizing of clickable cross button */
@@ -59,7 +78,7 @@ a.nav-link {
 
 /* Color/shape of close button cross */
 .bm-cross {
-    background: #323232;
+    background: var(--primary-color);
 }
 
 /*
@@ -73,7 +92,7 @@ a.nav-link {
 
 /* General sidebar styles */
 .bm-menu {
-    background: #DDD0C8;
+    background: var(--background-color);
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
 }
@@ -90,8 +109,11 @@ a.nav-link {
     gap: 2.5em;
     justify-content: center;
     align-items: center;
-    color: #b8b7ad;
     padding: 0.8em;
+}
+
+.nav-link {
+    color: var(--primary-color);
 }
 
 /* Individual item */

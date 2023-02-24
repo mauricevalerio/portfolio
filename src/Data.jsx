@@ -45,17 +45,22 @@ export const projects = [
     },
 ]
 
-export const aboutMe = {
-    intro: `Hello, I'm Maurice Valerio a Front End Web Developer and soon to be Full Stack Web Developer.
-    I'm currently working as a IT Specialist in CA, USA.`,
-    interestInWeb: `Developing web applications is a way for me to express and communicate myself with others around the world.`,
-    hobbies: `I'm a console gamer and do daily kettlebell trainings. Coding and problem solving
-    became a hobby after I've made a habit of coding everyday.`
-}
-
 export const socialMedia = {
     github: 'https://github.com/mauricevalerio',
     linkedin: 'https://www.linkedin.com/in/maurice-albert-valerio/',
     facebook: 'https://www.facebook.com/mauricevalerio29/',
     instagram: 'https://www.instagram.com/mauricevalerioo/'
 }
+
+export const AboutMeJsx = (
+    <div>
+        <p>Hello, I'm Maurice Valerio a <span className='underline-color'>Front End Web Developer</span> and soon to be Full Stack Web Developer. I'm currently working as a IT Specialist in CA, USA.</p>
+        <p>Developing web applications is a way for me to express and communicate myself with others around the world. I always implement <span className='underline-color'>DRY code principle</span> as much as possible simply because it makes web applications faster and efficient due to lesser code.</p>
+        <p>When I'm not coding, I play games in my console and do daily kettlebell trainings.</p>
+    </div>
+)
+
+export const ContactMeJsx = (
+    <p>I'm <span className='underline-color'>actively looking for a entry level developer job</span>! If you think I'm a good candidate for your company, please don't hesitate to reach me!
+    We can also discuss any freelance projects. Reach me via social media!</p> 
+)

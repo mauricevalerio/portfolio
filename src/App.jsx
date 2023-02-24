@@ -7,7 +7,7 @@ import ContactMe from './components/ContactMe'
 export default function App() {
 
   return (
-    <div className='app'>
+    <div>
       <Header />
       <Hero />
       <AboutMe />
