@@ -23,11 +23,11 @@ export default function ContactMe() {
     }
     
     return (
-        <section id='contact-me' className='component-layout padding'>
+        <section id='contact-me' className='component-layout'>
             
             <div className='component-child'>
                 <h2 className='primary-color'>Contact me</h2>
-                <p>{ContactMeJsx}</p>
+                {ContactMeJsx}
             </div>
             
             <form onSubmit={handleSubmit} autoComplete='off' className='component-child'>

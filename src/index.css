@@ -19,6 +19,17 @@ body {
   background: var(--background-color);
 }
 
+/********** GENERAL CONTAINERS **************/
+section.component-layout {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 3em 1em;
+}
+
+.component-child {
+  flex: 1;
+}
+
 .primary-color {
   color: var(--primary-color);
 }
@@ -27,9 +38,7 @@ body {
   border-bottom: 5px solid var(--underline-color);
 }
 
-section.padding {
-  padding: 3em 1em;
-}
+/************* GENERAL TYPOGRAPHY ***************/
 
 h1,
 h2 {
@@ -55,23 +64,14 @@ h2:after {
 p {
   line-height: 2;
   letter-spacing: 0.0125rem;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
+  text-align: justify;
 }
 
-section.component-layout {
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-.component-child {
-  padding: 0 0.75em;
-  flex: 1;
-}
-
-/********** HERO ***************/
+/*************** HERO ***************/
 
 section#hero {
-  padding-top: 7.5em;
+  padding-top: 7.5rem;
 }
 
 div.title {
@@ -86,24 +86,91 @@ span.read-more-less {
   cursor: pointer;
 }
 
-/********** CONTACT ME ***************/
+.about-me-blob-bg {
+  background: center/95% no-repeat url('./assets/about-me-blob-bg.svg')
+}
 
+/********** SKILLS ***************/
+
+div.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 0.5em;
+}
+
+div.skill-item {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p.skill-name {
+  margin: 0;
+}
+
+img.skill-icon {
+  width: 125px;
+  height: 100px;
+  transition: all 0.5s ease-in-out;
+}
+
+img.skill-icon:hover {
+  transform: scale(1.1);
+}
+
+/********** PROJECTS ***************/
+div.project-background {
+  width: 100%;
+  height: 100%;
+  background: center/cover no-repeat url('./assets/project-background.png');
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: -1;
+}
+
+div.project-item-container {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img.project-icon {
+  width: 35px;
+  height: 35px;
+}
+
+a.scrimba-link,
+a.project-title {
+  color: var(--primary-color);
+}
+
+a.project-title {
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+/********** CONTACT ME ***************/
 textarea,
 input,
 button {
   background: var(--input-background);
-  padding: 1em 1.5em;
   color: var(--primary-color);
-  font-size: 1rem;
+  padding: 1em;
+  font-size: inherit;
   font-family: inherit;
   outline: none;
-  margin-top: 0.25em;
   border: none;
   border-radius: 20px;
 }
 
 textarea {
-  height: 350px;
+  height: 250px;
   resize: none;
 }
 
@@ -131,6 +198,7 @@ button:active {
 .input-group {
   display: flex;
   flex-direction: column;
+  gap: 0.25em;
   margin-bottom: 1em;
 }
 
@@ -138,8 +206,16 @@ button:active {
 /********** MEDIA QUERIES ***************/
 
 @media (width >=768px) {
-  section.padding {
-    padding: 3em 12em;
+  section.component-layout {
+    padding: 3em 10em;
+    gap: 1.5em;
+  }
+}
+
+@media (width >=1024px) {
+  section.component-layout {
+    flex-flow: unset;
+    align-items: center;
   }
 
   h1 {
@@ -148,17 +224,6 @@ button:active {
 
   h2 {
     font-size: 2.5rem;
-  }
-
-  p {
-    font-size: 1.125rem;
-  }
-}
-
-@media (width >=1024px) {
-  section.component-layout {
-    flex-flow: unset;
-    align-items: center;
   }
 
   /* HERO */
@@ -176,16 +241,12 @@ button:active {
     max-width: 35%;
   }
 
+  /* SKILLS */
+  div.skills-inner {
+    order: 1;
+  }
+
   /* CONTACT ME */
-
-  input,
-  textarea {
-    padding: 1em;
-  }
-
-  textarea {
-    height: 175px;
-  }
 
   button {
     width: unset;

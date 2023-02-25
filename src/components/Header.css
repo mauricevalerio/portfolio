@@ -1,3 +1,5 @@
+/* HEADER CSS SEPARATED SINCE IT USES A REACT PACKAGE */
+
 a.nav-link {
     text-decoration: none;
     font-size: 1.75rem;

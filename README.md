@@ -1,10 +1,10 @@
 # portfolio
  Maurice's Portfolio
 
-
-//header display
 //site logo
 //meta tag search
+//send message functionality
+//scroll effect
 
 
 h1 {

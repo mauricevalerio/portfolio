@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import avatarImage from '../assets/avatar-picture.svg'
+import avatarImage from '../assets/avatar.svg'
 import { AboutMeJsx } from '../Data'
 
 function AboutMe() {
@@ -10,8 +10,8 @@ function AboutMe() {
     }
 
     return (
-        <section id='about-me' className='component-layout primary-color padding'>
-            <div className='component-child'>
+        <section id='about-me' className='component-layout primary-color'>
+            <div className={`component-child ${!readMore && 'about-me-blob-bg'}`}>
                 <h2>About me</h2>
                 <div>
                     {readMore ? 

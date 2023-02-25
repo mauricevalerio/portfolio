@@ -29,7 +29,7 @@ export default function Header() {
 
     return (
         <Menu 
-        width={width > 768 ? '30%' : '100%'}
+        width={width > 768 ? '35%' : '100%'}
         isOpen={isOpen}
         onOpen={toggleMenu}
         onClose={toggleMenu}
@@ -39,6 +39,7 @@ export default function Header() {
         >
             <a href='#hero' className='nav-link' onClick={toggleMenu}>Home</a>
             <a href='#about-me' className='nav-link' onClick={toggleMenu}>About Me</a>
+            <a href='#skills' className='nav-link' onClick={toggleMenu}>Skills</a>
             <a href='#projects' className='nav-link' onClick={toggleMenu}>Projects</a>
             <a href='#contact-me' className='nav-link' onClick={toggleMenu}>Contact</a>
             <div style={{display: 'flex', gap: '1.5em'}}>
