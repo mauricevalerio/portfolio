@@ -16,8 +16,12 @@ export default function Projects() {
                 {projectJsx}
             </div>
             
-            <div className='component-child project-background'>
-                {projectItemElements}
+            <div className='component-child'>
+                <div className='phone'>
+                    <div className='phone-mic'></div>
+                    <div className='phone-screen'>{projectItemElements}</div>
+                    <div className="phone-button"></div>
+                </div>
             </div>
             
         </section>

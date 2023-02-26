@@ -92,7 +92,7 @@ export const projects = [
         link: 'https://incredible-taffy-a57e9c.netlify.app/'
     },
     {
-        name: 'Food Ordering App',
+        name: 'Food Order',
         link: 'https://loquacious-croquembouche-8426e6.netlify.app/'
     },
     {
