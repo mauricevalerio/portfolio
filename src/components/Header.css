@@ -1,5 +1,4 @@
 /* HEADER CSS SEPARATED SINCE IT USES A REACT PACKAGE */
-
 a.nav-link {
     text-decoration: none;
     font-size: 1.75rem;
@@ -24,34 +23,6 @@ a.nav-link:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-
-.rotate-icon:hover {
-    animation-name: rotate;
-    animation-duration: .5s;
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-[data-icon="linkedin"]>path:hover {
-    fill: #0077b5;
-}
-
-[data-icon="square-facebook"]>path:hover {
-    fill: #3A5795;
-}
-
-[data-icon="square-instagram"]>path:hover {
-    fill: #e1306c;
-}
-
 
 /* Position and sizing of burger button */
 .bm-burger-button {
@@ -126,4 +97,17 @@ a.nav-link:hover:after {
 /* Styling of overlay */
 .bm-overlay {
     background: rgba(0, 0, 0, 0.3);
+}
+
+@media (width >=768px) {
+    nav.component-layout {
+        display: flex;
+        justify-content: end;
+        padding: 3em 10em;
+        gap: 1.5em;
+    }
+
+    a.nav-link {
+        font-size: 1.25rem;
+    }
 }

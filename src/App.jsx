@@ -4,17 +4,16 @@ import AboutMe from './components/AboutMe'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import ContactMe from './components/ContactMe'
+import AddAnimation from './components/renderProps/AddAnimation'
 
 export default function App() {
-
+  const arrayComponent = [<Hero />, <AboutMe />, <Skills />, <Projects />, <ContactMe />]
   return (
     <div>
-      <Header />
-      <Hero />
-      <AboutMe />
-      <Skills />
-      <Projects />
-      <ContactMe />
+        <Header />
+        <AddAnimation 
+        arrayComponent={arrayComponent}
+        />
     </div>
   )
 }

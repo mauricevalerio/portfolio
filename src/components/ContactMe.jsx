@@ -1,7 +1,18 @@
 import { useState } from 'react'
-import { ContactMeJsx } from '../Data'
+import { ContactMeJsx, socialMedia } from '../Data'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function ContactMe() {
+    const iconStyles = {
+        size: '3x',
+        color: '#494136'
+    }
+    const socialMediaElements = socialMedia.map(socialMediaItem => {
+        return <a href={socialMediaItem.link} target='_blank' className='rotate-icon'>
+            <FontAwesomeIcon icon={socialMediaItem.fontAwesomeIcon} size={iconStyles.size} color={iconStyles.color}/>
+        </a>
+    })
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -28,6 +39,9 @@ export default function ContactMe() {
             <div className='component-child'>
                 <h2 className='primary-color'>Contact me</h2>
                 {ContactMeJsx}
+                <div className='social-media'>
+                    {socialMediaElements}
+                </div>
             </div>
             
             <form onSubmit={handleSubmit} autoComplete='off' className='component-child'>

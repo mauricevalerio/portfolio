@@ -13,6 +13,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Space Mono', monospace;
@@ -22,20 +26,15 @@ body {
 /********** GENERAL CONTAINERS **************/
 section.component-layout {
   display: flex;
-  flex-flow: column nowrap;
   padding: 3em 1em;
+}
+
+section.component-layout {
+  flex-flow: column nowrap;
 }
 
 .component-child {
   flex: 1;
-}
-
-.primary-color {
-  color: var(--primary-color);
-}
-
-.underline-color {
-  border-bottom: 5px solid var(--underline-color);
 }
 
 /************* GENERAL TYPOGRAPHY ***************/
@@ -68,10 +67,18 @@ p {
   text-align: justify;
 }
 
+.primary-color {
+  color: var(--primary-color);
+}
+
+.underline-color {
+  border-bottom: 5px solid var(--underline-color);
+}
+
 /*************** HERO ***************/
 
 section#hero {
-  padding-top: 7.5rem;
+  padding-top: 7rem;
 }
 
 div.title {
@@ -123,15 +130,18 @@ img.skill-icon:hover {
 }
 
 /********** PROJECTS ***************/
+div.phone-border {
+  border: 0.25rem solid var(--primary-color);
+}
+
 div.phone {
   width: 23rem;
   height: 34rem;
   padding: 0 1rem;
-  border: 0.25rem solid var(--underline-color);
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  background-color: var(--primary-color);
+  background-color: var(--underline-color);
   margin: 0 auto;
 }
 
@@ -140,11 +150,10 @@ div.phone-mic {
   width: 8rem;
   margin: 1rem auto;
   border-radius: 50rem;
-  background-color: var(--underline-color);
+  background-color: var(--primary-color);
 }
 
 div.phone-screen {
-  position: relative;
   flex: 1 0 auto;
   background-color: var(--input-background);
   display: flex;
@@ -156,21 +165,16 @@ div.phone-screen {
 div.phone-button {
   width: 2.5rem;
   height: 2.5rem;
-  border: 2px solid var(--underline-color);
+  border: 2px solid var(--primary-color);
   border-radius: 50%;
   margin: 1rem auto;
 }
-
-/* div.project-background {
-  background: center/contain no-repeat url('./assets/project-background.png');
-} */
 
 div.project-item-container {
   width: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 1;
 }
 
 img.project-icon {
@@ -236,6 +240,39 @@ button:active {
   margin-bottom: 1em;
 }
 
+div.social-media {
+  display: flex;
+  gap: 1.5em;
+  justify-content: space-evenly;
+  padding-bottom: 1em;
+}
+
+.rotate-icon:hover {
+  animation-name: rotate;
+  animation-duration: .5s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+[data-icon="linkedin"]>path:hover {
+  fill: #0077b5;
+}
+
+[data-icon="square-facebook"]>path:hover {
+  fill: #3A5795;
+}
+
+[data-icon="square-instagram"]>path:hover {
+  fill: #e1306c;
+}
 
 /********** MEDIA QUERIES ***************/
 

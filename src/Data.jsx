@@ -9,6 +9,7 @@ import express from './assets/language-icons/express.svg'
 import mongodb from './assets/language-icons/mongodb.svg'
 import sql from './assets/language-icons/sql.svg'
 import github from './assets/language-icons/github.svg'
+import { faSquareFacebook, faSquareInstagram, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 export const skillIcons = [
     {
@@ -102,12 +103,24 @@ export const projects = [
 ]
 
 /* SOCIAL MEDIA DATA */
-export const socialMedia = {
-    github: 'https://github.com/mauricevalerio',
-    linkedin: 'https://www.linkedin.com/in/maurice-albert-valerio/',
-    facebook: 'https://www.facebook.com/mauricevalerio29/',
-    instagram: 'https://www.instagram.com/mauricevalerioo/'
-}
+export const socialMedia = [
+    {
+        fontAwesomeIcon: faGithub,
+        link: 'https://github.com/mauricevalerio',
+    },
+    {
+        fontAwesomeIcon: faLinkedin,
+        link: 'https://www.linkedin.com/in/maurice-albert-valerio/',
+    },
+    {
+        fontAwesomeIcon: faSquareFacebook,
+        link: 'https://www.facebook.com/mauricevalerio29/',
+    },
+    {
+        fontAwesomeIcon: faSquareInstagram,
+        link: 'https://www.instagram.com/mauricevalerioo/',
+    },
+]
 
 /* JSX ABOUT ME AND CONTACT ME CONTENT ELEMENTS */
 export const AboutMeJsx = (

@@ -17,10 +17,10 @@ export default function Projects() {
             </div>
             
             <div className='component-child'>
-                <div className='phone'>
+                <div className='phone phone-border'>
                     <div className='phone-mic'></div>
-                    <div className='phone-screen'>{projectItemElements}</div>
-                    <div className="phone-button"></div>
+                    <div className='phone-screen phone-border'>{projectItemElements}</div>
+                    <div className='phone-button'></div>
                 </div>
             </div>
             
