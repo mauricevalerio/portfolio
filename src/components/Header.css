@@ -4,6 +4,7 @@ a.nav-link {
     font-size: 1.75rem;
     position: relative;
     transition: all 2s linear;
+    color: var(--primary-color);
 }
 
 a.nav-link:after {
@@ -85,9 +86,7 @@ a.nav-link:hover:after {
     padding: 0.8em;
 }
 
-.nav-link {
-    color: var(--primary-color);
-}
+
 
 /* Individual item */
 .bm-item {
@@ -107,7 +106,26 @@ a.nav-link:hover:after {
         gap: 1.5em;
     }
 
+    nav.sticky {
+        opacity: 0.90;
+        z-index: 1;
+        background: #f1cb60;
+        position: sticky;
+        top: 0;
+        padding: 1em 10em;
+    }
+
     a.nav-link {
         font-size: 1.25rem;
+    }
+}
+
+@media (width > 1024px) {
+    nav.component-layout {
+        padding: 3em 15em;
+    }
+
+    nav.sticky {
+        padding: 1em 15em;
     }
 }

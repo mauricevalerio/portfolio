@@ -4,8 +4,10 @@ import placeholder from '../assets/placeholder.svg'
 export default function Projects() {
     const projectItemElements = projects.map((projectItem, index) => {
         return <div key={index} className='project-item-container'>
-            <img src={placeholder} alt='' className='project-icon'/>
-            <a href={projectItem.link} target='_blank' className='project-title'>{projectItem.name}</a>
+            <a href={projectItem.link} target='_blank' className='project-link'>
+                <img src={placeholder} alt='' className='project-icon'/>
+                <p className='project-title'>{projectItem.name}</p>
+            </a>
         </div>
     })
 

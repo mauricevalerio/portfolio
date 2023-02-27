@@ -30,11 +30,15 @@ section.component-layout {
 }
 
 section.component-layout {
-  flex-flow: column nowrap;
+  flex-direction: column;
 }
 
 .component-child {
   flex: 1;
+}
+
+.component-child-larger {
+  flex: 1.25;
 }
 
 /************* GENERAL TYPOGRAPHY ***************/
@@ -61,7 +65,7 @@ h2:after {
 }
 
 p {
-  line-height: 2;
+  line-height: 1.75;
   letter-spacing: 0.0125rem;
   font-size: 1.25rem;
   text-align: justify;
@@ -91,10 +95,6 @@ span.read-more-less {
   font-weight: 700;
   text-decoration: underline;
   cursor: pointer;
-}
-
-.about-me-blob-bg {
-  background: center/95% no-repeat url('./assets/about-me-blob-bg.svg')
 }
 
 /********** SKILLS ***************/
@@ -159,7 +159,7 @@ div.phone-screen {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 1rem 0;
+  padding: 1em;
 }
 
 div.phone-button {
@@ -171,10 +171,20 @@ div.phone-button {
 }
 
 div.project-item-container {
-  width: 100px;
+  width: 75px;
+}
+
+a.project-link {
+  text-decoration: none;
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all 0.5s;
+  color: var(--primary-color);
+}
+
+a.project-link:hover {
+  transform: scale(1.1);
 }
 
 img.project-icon {
@@ -182,15 +192,15 @@ img.project-icon {
   height: 35px;
 }
 
-a.scrimba-link,
-a.project-title {
+a.scrimba-link {
   color: var(--primary-color);
 }
 
-a.project-title {
+p.project-title {
   text-align: center;
   font-size: 0.85rem;
-  text-decoration: none;
+  line-height: 1;
+  margin: 0;
 }
 
 /********** CONTACT ME ***************/
@@ -281,6 +291,10 @@ div.social-media {
     padding: 3em 10em;
     gap: 1.5em;
   }
+
+  section#hero {
+    padding-top: unset;
+  }
 }
 
 @media (width >=1024px) {
@@ -318,8 +332,13 @@ div.social-media {
   }
 
   /* CONTACT ME */
-
   button {
     width: unset;
+  }
+}
+
+@media (width > 1024px) {
+  section.component-layout {
+    padding: 3em 15em;
   }
 }

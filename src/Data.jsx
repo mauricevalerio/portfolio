@@ -32,22 +32,22 @@ export const skillIcons = [
         name: 'ReactJS',
         icon: react
     },
-    {
-        name: 'NodeJS',
-        icon: node
-    },
-    {
-        name: 'ExpressJS',
-        icon: express
-    },
+    // {
+    //     name: 'NodeJS',
+    //     icon: node
+    // },
+    // {
+    //     name: 'ExpressJS',
+    //     icon: express
+    // },
     {
         name: 'SQL',
         icon: sql
     },
-    {
-        name: 'MongoDB',
-        icon: mongodb
-    },
+    // {
+    //     name: 'MongoDB',
+    //     icon: mongodb
+    // },
     {
         name: 'GitHub',
         icon: github

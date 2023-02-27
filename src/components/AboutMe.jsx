@@ -11,7 +11,7 @@ function AboutMe() {
 
     return (
         <section id='about-me' className='component-layout primary-color'>
-            <div className={`component-child ${!readMore && 'about-me-blob-bg'}`}>
+            <div className={`component-child`}>
                 <h2>About me</h2>
                 <div>
                     {readMore ? 
