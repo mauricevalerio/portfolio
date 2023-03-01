@@ -10,6 +10,12 @@ import mongodb from './assets/language-icons/mongodb.svg'
 import sql from './assets/language-icons/sql.svg'
 import github from './assets/language-icons/github.svg'
 import { faSquareFacebook, faSquareInstagram, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import quizzical from './assets/project-icons/quizzical.svg'
+import tenzies from './assets/project-icons/tenzies.svg'
+import travelJournal from './assets/project-icons/travel-journal.svg'
+import movieWatchlist from './assets/project-icons/movie-watchlist.svg'
+import colorScheme from './assets/project-icons/color-scheme.svg'
+import rpgCardGame from './assets/project-icons/rpg-card-game.svg'
 
 export const skillIcons = [
     {
@@ -58,48 +64,54 @@ export const skillIcons = [
 export const projects = [
     {
         name: 'Quizzical',
-        link: 'https://dancing-sopapillas-b63521.netlify.app/'
+        link: 'https://dancing-sopapillas-b63521.netlify.app/',
+        iconName: quizzical
     },
     {
         name: 'Tenzies',
-        link: 'https://frolicking-stardust-12172f.netlify.app/'
+        link: 'https://frolicking-stardust-12172f.netlify.app/',
+        iconName: tenzies
     },
     {
         name: 'Travel Journal',
-        link: 'https://splendid-peony-346f38.netlify.app/'
+        link: 'https://splendid-peony-346f38.netlify.app/',
+        iconName: travelJournal
     },
     {
         name: 'Movie Watchlist',
-        link: 'https://fascinating-torrone-293b7c.netlify.app/'
+        link: 'https://fascinating-torrone-293b7c.netlify.app/',
+        iconName: movieWatchlist
     },
     {
         name: 'Color Scheme Generator',
-        link: 'https://lustrous-cheesecake-9de9a2.netlify.app/'
+        link: 'https://lustrous-cheesecake-9de9a2.netlify.app/',
+        iconName: colorScheme
     },
     {
         name: 'RPG Card Game',
-        link: 'https://benevolent-lokum-7f63bf.netlify.app/'
+        link: 'https://benevolent-lokum-7f63bf.netlify.app/',
+        iconName: rpgCardGame
     },
-    {
-        name: 'Tindog',
-        link: 'https://elaborate-swan-15c4f9.netlify.app/'
-    },
-    {
-        name: 'Twimba',
-        link: 'https://resilient-crepe-6cadd2.netlify.app/'
-    },
-    {
-        name: 'Oldagram',
-        link: 'https://incredible-taffy-a57e9c.netlify.app/'
-    },
-    {
-        name: 'Food Order',
-        link: 'https://loquacious-croquembouche-8426e6.netlify.app/'
-    },
-    {
-        name: 'Basketball Scoreboard',
-        link: 'https://fabulous-smakager-935376.netlify.app/'
-    },
+    // {
+    //     name: 'Tindog',
+    //     link: 'https://elaborate-swan-15c4f9.netlify.app/'
+    // },
+    // {
+    //     name: 'Twimba',
+    //     link: 'https://resilient-crepe-6cadd2.netlify.app/'
+    // },
+    // {
+    //     name: 'Oldagram',
+    //     link: 'https://incredible-taffy-a57e9c.netlify.app/'
+    // },
+    // {
+    //     name: 'Food Order',
+    //     link: 'https://loquacious-croquembouche-8426e6.netlify.app/'
+    // },
+    // {
+    //     name: 'Basketball Scoreboard',
+    //     link: 'https://fabulous-smakager-935376.netlify.app/'
+    // },
 ]
 
 /* SOCIAL MEDIA DATA */
@@ -137,7 +149,17 @@ export const ContactMeJsx = (
 
 export const projectJsx = (
     <div>
-        <p>Currently, all of the projects listed are either solo or guided projects from <a href='https://scrimba.com/' target='_blank' className='scrimba-link'>Scrimba</a>. I always add features when its a guided project to help me practice working on code bases.</p>
+        <p>Currently, all of the projects listed are either solo or guided projects from <a href='https://scrimba.com/' target='_blank' className='link strong'>Scrimba</a>. I always add features when its a guided project to help me practice working on code bases.</p>
         <p>I'm also in the process of converting all projects into React as practice. </p>
+    </div>
+)
+
+export const footerJsx = (
+    <div>
+        <p className='margin-zero'>Built with <a href='https://vitejs.dev/' target='_blank' className='link strong'>React+Vite</a></p>
+        <p className='margin-zero'>
+            Thanks to <a href='https://www.npmjs.com/package/react-burger-menu' target='_blank' className='link strong'>React Burger Menu</a> and <a href='https://www.npmjs.com/package/react-animation-on-scroll' target='_blank' className='link strong'>React Animation Scroll</a>
+        </p>
+        <p className='margin-zero'>Logo and graphic design by <a href='https://www.instagram.com/artsyetph/' target='_blank' className='link strong'>artsyetph</a></p>
     </div>
 )

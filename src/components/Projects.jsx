@@ -1,12 +1,11 @@
 import { projects, projectJsx } from '../Data'
-import placeholder from '../assets/placeholder.svg'
 
 export default function Projects() {
     const projectItemElements = projects.map((projectItem, index) => {
         return <div key={index} className='project-item-container'>
             <a href={projectItem.link} target='_blank' className='project-link'>
-                <img src={placeholder} alt='' className='project-icon'/>
-                <p className='project-title'>{projectItem.name}</p>
+                <img src={projectItem.iconName} alt='Project Icons' className='project-icon'/>
+                <p className='project-title margin-zero'>{projectItem.name}</p>
             </a>
         </div>
     })

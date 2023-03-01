@@ -1,5 +1,9 @@
+import { footerJsx } from "../Data"
+
 export default function Footer() {
     return (
-        <h1></h1>
+        <section className='footer'>
+            {footerJsx}
+        </section>
     )
 }

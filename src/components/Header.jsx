@@ -17,11 +17,11 @@ export default function Header() {
 
     const navElements = (
         <>
-            <a href='#hero' className='nav-link' onClick={toggleMenu}>Home</a>
-            <a href='#about-me' className='nav-link' onClick={toggleMenu}>About Me</a>
-            <a href='#skills' className='nav-link' onClick={toggleMenu}>Skills</a>
-            <a href='#projects' className='nav-link' onClick={toggleMenu}>Projects</a>
-            <a href='#contact-me' className='nav-link' onClick={toggleMenu}>Contact</a>
+            <a href='#hero' className='link nav-link' onClick={toggleMenu}>Home</a>
+            <a href='#about-me' className='link nav-link' onClick={toggleMenu}>About Me</a>
+            <a href='#skills' className='link nav-link' onClick={toggleMenu}>Skills</a>
+            <a href='#projects' className='link nav-link' onClick={toggleMenu}>Projects</a>
+            <a href='#contact-me' className='link nav-link' onClick={toggleMenu}>Contact</a>
         </>
     )
 

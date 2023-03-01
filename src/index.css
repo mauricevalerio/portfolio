@@ -71,12 +71,45 @@ p {
   text-align: justify;
 }
 
+p.margin-zero {
+  margin: 0;
+}
+
 .primary-color {
   color: var(--primary-color);
 }
 
 .underline-color {
   border-bottom: 5px solid var(--underline-color);
+}
+
+a.link {
+  text-decoration: none;
+  position: relative;
+  transition: all 2s linear;
+  color: var(--primary-color);
+}
+
+a.link:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--underline-color);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+a.link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+a.strong {
+  font-weight: 700;
 }
 
 /*************** HERO ***************/
@@ -113,10 +146,6 @@ div.skill-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-p.skill-name {
-  margin: 0;
 }
 
 img.skill-icon {
@@ -188,19 +217,14 @@ a.project-link:hover {
 }
 
 img.project-icon {
-  width: 35px;
-  height: 35px;
-}
-
-a.scrimba-link {
-  color: var(--primary-color);
+  width: 60px;
+  height: 60px;
 }
 
 p.project-title {
   text-align: center;
   font-size: 0.85rem;
   line-height: 1;
-  margin: 0;
 }
 
 /********** CONTACT ME ***************/
@@ -284,6 +308,19 @@ div.social-media {
   fill: #e1306c;
 }
 
+/********** FOOTER ***************/
+section.footer {
+  background: #f1cb60;
+  width: 100%;
+  padding: 1em;
+}
+
+section.footer p {
+  font-size: 0.85rem;
+  text-align: center;
+  color: var(--primary-color);
+}
+
 /********** MEDIA QUERIES ***************/
 
 @media (width >=768px) {
@@ -317,13 +354,13 @@ div.social-media {
   }
 
   img.hero-image {
-    max-width: 50%;
+    max-width: 45%;
   }
 
   /* ABOUT ME */
   img.avatar-image {
     order: -1;
-    max-width: 35%;
+    max-width: 30%;
   }
 
   /* SKILLS */

@@ -1,28 +1,6 @@
 /* HEADER CSS SEPARATED SINCE IT USES A REACT PACKAGE */
 a.nav-link {
-    text-decoration: none;
     font-size: 1.75rem;
-    position: relative;
-    transition: all 2s linear;
-    color: var(--primary-color);
-}
-
-a.nav-link:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 5px;
-    bottom: 0;
-    left: 0;
-    background-color: var(--underline-color);
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-
-a.nav-link:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
 }
 
 /* Position and sizing of burger button */
