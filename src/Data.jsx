@@ -148,7 +148,7 @@ export const socialMedia = [
 export const AboutMeJsx = (
     <div>
         <p>Hello, I'm Maurice Valerio a <span className='underline-color'>Front End Web Developer</span> and soon to be Full Stack Web Developer. I'm currently working as a IT Specialist in CA, USA.</p>
-        <p>Developing web applications is a way for me to express and communicate myself with others around the world. I always implement <span className='underline-color'>DRY code principle</span> as much as possible simply because it makes web applications faster and efficient due to lesser code.</p>
+        <p>I specialize in <span className='underline-color'>HTML5, CSS3, JavaScript, and SQL</span> and also have an <span className='underline-color'>intermediate knowledge in ReactJS</span>. I always implement DRY code principle as much as possible simply because it makes web applications faster and efficient due to lesser code.</p>
         <p>When I'm not coding, I play games in my console and do daily kettlebell trainings.</p>
     </div>
 )
@@ -166,9 +166,9 @@ export const projectJsx = (
 
 export const footerJsx = (
     <div>
-        <p className='margin-zero'>Built with <a href='https://vitejs.dev/' target='_blank' className='link strong'>React+Vite</a></p>
-        <p className='margin-zero'>
-            Thanks to <a href='https://www.npmjs.com/package/react-burger-menu' target='_blank' className='link strong'>React Burger Menu</a> and <a href='https://www.npmjs.com/package/react-animation-on-scroll' target='_blank' className='link strong'>React Animation Scroll</a>
+        <p className='margin-zero'>Built with <a href='https://vitejs.dev/' target='_blank' className='link strong'>React+Vite</a>
+        , <a href='https://www.npmjs.com/package/react-burger-menu' target='_blank' className='link strong'>React Burger Menu</a>
+        , and <a href='https://www.npmjs.com/package/react-animation-on-scroll' target='_blank' className='link strong'>React Animation Scroll</a>
         </p>
         <p className='margin-zero'>Logo and graphic design by <a href='https://www.instagram.com/artsyetph/' target='_blank' className='link strong'>artsyetph</a></p>
     </div>
