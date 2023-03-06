@@ -1,23 +1,23 @@
 import { useState } from 'react'
 import { ContactMeJsx, socialMedia } from '../Data'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import sendEmail from '../sendEmail'
 
 export default function ContactMe() {
     const iconStyles = {
         size: '3x',
         color: '#494136'
     }
-    const socialMediaElements = socialMedia.map(socialMediaItem => {
-        return <a href={socialMediaItem.link} target='_blank' className='rotate-icon'>
-            <FontAwesomeIcon icon={socialMediaItem.fontAwesomeIcon} size={iconStyles.size} color={iconStyles.color}/>
-        </a>
-    })
 
     const [formData, setFormData] = useState({
         name: '',
         email: '',
         message: ''
     })
+
+    const [isSendingFailed, setIsSendingFailed] = useState(false)
+    const [isFormSubmitted, setIsFormSubmitted] = useState(false)
+    const [isLoading, setIsLoading] = useState(false)
 
     function handleInputChange(e) {
         const {name, value} = e.target
@@ -26,12 +26,20 @@ export default function ContactMe() {
 
     function handleSubmit(e) {
         e.preventDefault()
+        setIsLoading(true)
+        sendEmail(setIsLoading, setIsFormSubmitted, setIsSendingFailed, formData)
         setFormData({
             name: '',
             email: '',
             message: ''
         })
     }
+
+    const socialMediaElements = socialMedia.map((socialMediaItem, index) => {
+        return <a href={socialMediaItem.link} key={index} target='_blank' className='rotate-icon'>
+            <FontAwesomeIcon icon={socialMediaItem.fontAwesomeIcon} size={iconStyles.size} color={iconStyles.color}/>
+        </a>
+    })
     
     return (
         <section id='contact-me' className='component-layout'>
@@ -81,7 +89,13 @@ export default function ContactMe() {
                     </textarea>
                 </div>
 
-                <button>Send Message</button>
+                <div className='loading'>
+                    <button disabled={isLoading}>Send Message</button>
+                    {isLoading && <span className='basic'></span>}
+                    {isFormSubmitted && <span className='message-sent success'>Message Sent</span>}
+                    {isSendingFailed && <span className='message-sent failed'>Message Sent Failed! Please make sure you're connected to the internet</span>}
+                </div>
+                
             </form>
         </section>
     )

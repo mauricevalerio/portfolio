@@ -86,7 +86,7 @@ a.nav-link {
 
     nav.sticky {
         z-index: 1;
-        background: #f1cb60;
+        background: var(--secondary-color);
         position: sticky;
         top: 0;
         padding: 1em 10em;
