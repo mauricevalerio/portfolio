@@ -147,9 +147,10 @@ export const socialMedia = [
 /* JSX ABOUT ME AND CONTACT ME CONTENT ELEMENTS */
 export const AboutMeJsx = (
     <div>
-        <p>Hello, I'm Maurice Valerio a <span className='underline-color'>Front End Web Developer</span> and soon to be Full Stack Web Developer. I'm currently working as a IT Specialist in CA, USA.</p>
-        <p>I specialize in <span className='underline-color'>HTML5, CSS3, JavaScript, and SQL</span> and also have an <span className='underline-color'>intermediate knowledge in ReactJS</span>. I always implement DRY code principle as much as possible simply because it makes web applications faster and efficient due to lesser code.</p>
-        <p>When I'm not coding, I play games in my console and do daily kettlebell trainings.</p>
+        <p>Provides efficient solutions and turns ideas into reality using my specialized skills in 
+            &nbsp;<span className='underline-color'>HTML5, CSS3, JavaScript, ReactJS, and SQL</span>. A fan of DRY code principle not because of creating something efficient but making the code base easier to maintain.</p>
+        <p>Full Stack Web Developer in training and currently practicing on ExpressJS, NodeJS, and MongoDB. I'm currently working as a IT Specialist in CA, USA.</p>
+        <p>Casual console gamer, fan of kettlebells and coffee.</p>
     </div>
 )
 
@@ -171,6 +172,8 @@ export const footerJsx = (
         , <a href='https://www.npmjs.com/package/react-animation-on-scroll' target='_blank' className='link strong'>React Animation Scroll</a>
         , and <a href='https://www.emailjs.com/' target='_blank' className='link strong'>EmailJS</a>
         </p>
-        <p className='margin-zero'>Logo and graphic design by <a href='https://www.instagram.com/artsyetph/' target='_blank' className='link strong'>artsyetph</a></p>
+        <p className='margin-zero'>Logo and graphic design by <a href='https://www.instagram.com/artsyetph/' target='_blank' className='link strong'>artsyetph </a>
+        and <a href='https://fontawesome.com/' target='_blank' className='link strong'>Font Awesome</a>
+        </p>
     </div>
 )
