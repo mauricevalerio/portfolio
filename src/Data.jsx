@@ -147,8 +147,7 @@ export const socialMedia = [
 /* JSX ABOUT ME AND CONTACT ME CONTENT ELEMENTS */
 export const AboutMeJsx = (
     <div>
-        <p>Provides efficient solutions and turns ideas into reality using my specialized skills in 
-            &nbsp;<span className='underline-color'>HTML5, CSS3, JavaScript, ReactJS, and SQL</span>. A fan of DRY code principle not because of creating something efficient but making the code base easier to maintain.</p>
+        <p>Provides efficient solutions and turns ideas into reality using my specialized skills in <span className='underline-color'>HTML5, CSS3, JavaScript, ReactJS, and SQL</span>. A fan of DRY code principle not because of creating something efficient but making the code base easier to maintain.</p>
         <p>Full Stack Web Developer in training and currently practicing on ExpressJS, NodeJS, and MongoDB. I'm currently working as a IT Specialist in CA, USA.</p>
         <p>Casual console gamer, fan of kettlebells and coffee.</p>
     </div>
