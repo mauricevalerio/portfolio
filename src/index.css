@@ -53,6 +53,10 @@ h1 {
   font-size: 2.5rem;
 }
 
+h1.job-title {
+  font-size: 1.75rem;
+}
+
 h2 {
   font-size: 2rem;
 }
@@ -387,7 +391,11 @@ section.footer p {
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 2.75rem;
+  }
+
+  h1.job-title {
+    font-size: 2rem;
   }
 
   h2 {

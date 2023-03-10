@@ -5,8 +5,7 @@ export default function Hero() {
         <section id='hero' className='component-layout primary-color'>
             <div className='component-child-larger title'>
                 <h1>&#60;Maurice Valerio&#62;</h1>
-                <h1>Front End</h1>
-                <h1>Web Developer</h1>
+                <h1 className='job-title'>Front End Web Developer</h1>
             </div>
 
             <img src={heroImage} alt="Hero Image" className='component-child hero-image'/> 
