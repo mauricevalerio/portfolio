@@ -134,14 +134,14 @@ export const socialMedia = [
         fontAwesomeIcon: faLinkedin,
         link: 'https://www.linkedin.com/in/maurice-albert-valerio/',
     },
-    {
-        fontAwesomeIcon: faSquareFacebook,
-        link: 'https://www.facebook.com/mauricevalerio29/',
-    },
-    {
-        fontAwesomeIcon: faSquareInstagram,
-        link: 'https://www.instagram.com/mauricevalerioo/',
-    },
+    // {
+    //     fontAwesomeIcon: faSquareFacebook,
+    //     link: 'https://www.facebook.com/mauricevalerio29/',
+    // },
+    // {
+    //     fontAwesomeIcon: faSquareInstagram,
+    //     link: 'https://www.instagram.com/mauricevalerioo/',
+    // },
 ]
 
 /* JSX ABOUT ME AND CONTACT ME CONTENT ELEMENTS */
