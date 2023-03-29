@@ -84,7 +84,7 @@ export const projects = [
     },
     {
         name: 'Movie Watchlist',
-        link: 'https://fascinating-torrone-293b7c.netlify.app/',
+        link: 'https://mauvie.netlify.app/',
         iconName: movieWatchlist
     },
     {
