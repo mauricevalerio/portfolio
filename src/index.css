@@ -24,6 +24,15 @@ body {
   background: var(--background-color);
 }
 
+body::-webkit-scrollbar {
+  background: var(--primary-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--underline-color);
+  border-radius: 10px;
+}
+
 /********** GENERAL CONTAINERS **************/
 section.component-layout {
   display: flex;
@@ -51,6 +60,11 @@ h2 {
 
 h1 {
   font-size: 2.5rem;
+}
+
+h1.name,
+h1.job-title {
+  text-align: center;
 }
 
 h1.job-title {
@@ -375,7 +389,7 @@ section.footer p {
 
 @media (width >=768px) {
   section.component-layout {
-    padding: 3em 10em;
+    padding: 3em 5em;
     gap: 1.5em;
   }
 
