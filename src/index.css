@@ -301,7 +301,6 @@ button:disabled {
 div.social-media {
   display: flex;
   gap: 1.5em;
-  justify-content: space-evenly;
   padding-bottom: 1em;
 }
 
