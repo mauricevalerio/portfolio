@@ -146,7 +146,7 @@ div.skill-list {
 }
 
 div.skill-item {
-  width: 135px;
+  width: 150px;
   height: 135px;
   display: flex;
   flex-direction: column;

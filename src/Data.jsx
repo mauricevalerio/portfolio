@@ -9,7 +9,8 @@ import express from './assets/language-icons/express.svg'
 import mongodb from './assets/language-icons/mongodb.svg'
 import sql from './assets/language-icons/sql.svg'
 import github from './assets/language-icons/github.svg'
-import { faSquareFacebook, faSquareInstagram, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import tailwindcss from './assets/language-icons/tailwindcss.svg'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import quizzical from './assets/project-icons/quizzical.svg'
 import tenzies from './assets/project-icons/tenzies.svg'
 import travelJournal from './assets/project-icons/travel-journal.svg'
@@ -30,6 +31,10 @@ export const skillIcons = [
     {
         name: 'CSS3',
         icon: css
+    },
+    {
+        name: 'Tailwind CSS',
+        icon: tailwindcss
     },
     {
         name: 'Bootstrap',
@@ -133,15 +138,7 @@ export const socialMedia = [
     {
         fontAwesomeIcon: faLinkedin,
         link: 'https://www.linkedin.com/in/maurice-albert-valerio/',
-    },
-    // {
-    //     fontAwesomeIcon: faSquareFacebook,
-    //     link: 'https://www.facebook.com/mauricevalerio29/',
-    // },
-    // {
-    //     fontAwesomeIcon: faSquareInstagram,
-    //     link: 'https://www.instagram.com/mauricevalerioo/',
-    // },
+    }
 ]
 
 /* JSX ABOUT ME AND CONTACT ME CONTENT ELEMENTS */
