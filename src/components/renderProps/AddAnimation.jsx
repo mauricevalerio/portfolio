@@ -6,7 +6,8 @@ export default function AddAnimation(props) {
         props.arrayComponent.map((component, index) => {
             return <AnimationOnScroll key={index}
             animateIn='animate__fadeInUp'
-            animationScrollDuration = {1.25}>
+            animationScrollDuration = {1}
+            animateOnce={true}>
                 {component}
             </AnimationOnScroll>
         })
