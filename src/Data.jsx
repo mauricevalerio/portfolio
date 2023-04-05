@@ -156,8 +156,7 @@ export const ContactMeJsx = (
 
 export const projectJsx = (
     <div>
-        <p>Currently, all of the projects listed are either solo or guided projects from <a href='https://scrimba.com/' target='_blank' className='link strong'>Scrimba</a>. I always add features when its a guided project to help me practice working on code bases.</p>
-        <p>I'm also in the process of converting all projects into React as practice. </p>
+        <p>Projects are focused heavily on HTML, CSS, Tailwind CSS, JavaScript, and React. Currently refactoring JavaScript code into React code.</p>
     </div>
 )
 
