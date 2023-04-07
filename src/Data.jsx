@@ -13,15 +13,7 @@ import tailwindcss from './assets/language-icons/tailwindcss.svg'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import quizzical from './assets/project-icons/quizzical.svg'
 import tenzies from './assets/project-icons/tenzies.svg'
-import travelJournal from './assets/project-icons/travel-journal.svg'
 import movieWatchlist from './assets/project-icons/movie-watchlist.svg'
-import colorScheme from './assets/project-icons/color-scheme.svg'
-import rpgCardGame from './assets/project-icons/rpg-card-game.svg'
-import tindog from './assets/project-icons/tindog.svg'
-import twimba from './assets/project-icons/twimba.svg'
-import oldagram from './assets/project-icons/oldagram.svg'
-import food from './assets/project-icons/food.svg'
-import basketball from './assets/project-icons/basketball.svg'
 
 export const skillIcons = [
     {
@@ -83,50 +75,10 @@ export const projects = [
         iconName: tenzies
     },
     {
-        name: 'Travel Journal',
-        link: 'https://splendid-peony-346f38.netlify.app/',
-        iconName: travelJournal
-    },
-    {
         name: 'Movie Watchlist',
         link: 'https://mauvie.netlify.app/',
         iconName: movieWatchlist
-    },
-    {
-        name: 'Color Scheme Generator',
-        link: 'https://lustrous-cheesecake-9de9a2.netlify.app/',
-        iconName: colorScheme
-    },
-    {
-        name: 'RPG Card Game',
-        link: 'https://benevolent-lokum-7f63bf.netlify.app/',
-        iconName: rpgCardGame
-    },
-    {
-        name: 'Tindog',
-        link: 'https://elaborate-swan-15c4f9.netlify.app/',
-        iconName: tindog
-    },
-    {
-        name: 'Twimba',
-        link: 'https://resilient-crepe-6cadd2.netlify.app/',
-        iconName: twimba
-    },
-    {
-        name: 'Oldagram',
-        link: 'https://incredible-taffy-a57e9c.netlify.app/',
-        iconName: oldagram
-    },
-    {
-        name: 'Food Order',
-        link: 'https://loquacious-croquembouche-8426e6.netlify.app/',
-        iconName: food
-    },
-    {
-        name: 'Basketball Scoreboard',
-        link: 'https://fabulous-smakager-935376.netlify.app/',
-        iconName: basketball
-    },
+    }
 ]
 
 /* SOCIAL MEDIA DATA */
