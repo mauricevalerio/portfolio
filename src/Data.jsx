@@ -66,12 +66,12 @@ export const skillIcons = [
 export const projects = [
     {
         name: 'Quizzical',
-        link: 'https://dancing-sopapillas-b63521.netlify.app/',
+        link: 'https://qu1zz1cal.netlify.app/',
         iconName: quizzical
     },
     {
         name: 'Tenzies',
-        link: 'https://frolicking-stardust-12172f.netlify.app/',
+        link: 'https://tenz1es.netlify.app/',
         iconName: tenzies
     },
     {
