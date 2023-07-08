@@ -11,9 +11,12 @@ import sql from './assets/language-icons/sql.svg'
 import github from './assets/language-icons/github.svg'
 import tailwindcss from './assets/language-icons/tailwindcss.svg'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+
 import quizzical from './assets/project-icons/quizzical.svg'
 import tenzies from './assets/project-icons/tenzies.svg'
 import movieWatchlist from './assets/project-icons/movie-watchlist.svg'
+import passwordGenerator from './assets/project-icons/password-generator.svg'
+import groceryCart from './assets/project-icons/grocery-cart.svg'
 
 export const skillIcons = [
     {
@@ -78,6 +81,16 @@ export const projects = [
         name: 'Movie Watchlist',
         link: 'https://mauvie.netlify.app/',
         iconName: movieWatchlist
+    },
+    {
+        name: 'Password Generator',
+        link: 'https://passw0rdg3n3rat0r.netlify.app/',
+        iconName: passwordGenerator
+    },
+    {
+        name: 'Grocery List',
+        link: 'https://firebase-grocerylist-mobile.netlify.app/',
+        iconName: groceryCart
     }
 ]
 
