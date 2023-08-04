@@ -1,21 +1,19 @@
-import Header from './components/Header'
-import Hero from './components/Hero'
-import AboutMe from './components/AboutMe'
-import Skills from './components/Skills'
-import Projects from './components/Projects'
-import ContactMe from './components/ContactMe'
-import Footer from './components/Footer'
-import AddAnimation from './components/renderProps/AddAnimation'
+import Home from './pages/Home'
+import Scrimba from './pages/Scrimba'
+import Frontendmentor from './pages/Frontendmentor'
+import NotFound from './pages/NotFound'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 export default function App() {
-  const arrayComponent = [<Hero />, <AboutMe />, <Skills />, <Projects />, <ContactMe />]
   return (
-    <div>
-        <Header />
-        <AddAnimation 
-        arrayComponent={arrayComponent}
-        />
-        <Footer />
-    </div>
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/scrimba" element={<Scrimba />} />
+        <Route path="/frontendmentor" element={<Frontendmentor />} />
+        <Route path='*' element={<NotFound />}/>
+      </Routes>
+    </BrowserRouter>
+
   )
 }

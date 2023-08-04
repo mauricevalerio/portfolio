@@ -1,0 +1,65 @@
+$background-color: #D7CEC7;
+$primary-color: #565656;
+$secondary-color: #C09F80;
+$tertiary-color: #76323F;
+$breakpoint-small: 480px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 1024px;
+
+@mixin header-text($font-size, $line-height: 1.25) {
+    color: $primary-color;
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+%link-hover {
+    a {
+        color: $tertiary-color;
+        font-weight: bold;
+        text-decoration: none;
+        position: relative;
+        transition: all 2s linear;
+
+        &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background-color: $tertiary-color;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        &:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    }
+}
+
+%reset {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+%flex-container {
+    display: flex;
+    row-gap: 0.5em;
+    column-gap: 0.4em;
+    flex-wrap: wrap;
+    margin: 0.5em 0;
+}
+
+%flex-item {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5em;
+    border-radius: 10px;
+    padding: 0.25em 0.5em;
+    color: $primary-color;
+    background-color: $secondary-color;
+}

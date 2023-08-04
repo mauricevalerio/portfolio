@@ -1,0 +1,156 @@
+@use 'base';
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Ropa+Sans&display=swap');
+
+
+* {
+    @extend %reset;
+    @extend %link-hover;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: base.$background-color;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Ropa Sans', sans-serif;
+    padding: 1rem;
+    height: 100vh;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.home,
+.scrimba {
+    animation: fade-in 2s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    @include base.header-text($font-size: 2.75rem);
+}
+
+h2 {
+    @include base.header-text($font-size: 1.75rem);
+}
+
+.avatar {
+    max-width: 200px;
+}
+
+.avatar-laptop {
+    max-width: 550px;
+    display: block;
+    margin: 0 auto;
+}
+
+.about {
+    p {
+        @include base.header-text($font-size: 1.135rem, $line-height: 1.5);
+    }
+}
+
+.footer {
+    margin: 0.5em 0;
+
+    p {
+        @include base.header-text($font-size: 1.135rem, $line-height: 1.25);
+        text-align: center;
+    }
+}
+
+.social-container {
+    @extend %flex-container;
+    align-items: center;
+
+    .social-icon {
+        width: 30px;
+    }
+}
+
+.skill-container {
+    @extend %flex-container;
+    font-size: 1.1rem;
+
+    .skill-item {
+        @extend %flex-item;
+        transition: all .2s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        .skill-icon {
+            width: 15px;
+        }
+    }
+}
+
+.scrimba-container {
+    @extend %flex-container;
+
+    .scrimba-item {
+        @extend %flex-item;
+        transition: all .2s;
+        text-align: center;
+        flex: 1;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            width: 50px;
+        }
+    }
+}
+
+.project-container {
+    @extend %flex-container;
+    font-size: 1.1rem;
+
+    .project-item {
+        @extend %flex-item;
+
+        .project-icon {
+            width: 30px;
+        }
+    }
+}
+
+@media(min-width: base.$breakpoint-small) {
+    body {
+        padding: 2rem;
+    }
+
+    html {
+        font-size: 18px;
+    }
+}
+
+@media(min-width: base.$breakpoint-medium) {
+
+    .header,
+    body {
+        display: flex;
+        align-items: center;
+    }
+
+    body {
+        justify-content: center;
+    }
+
+    .header {
+        justify-content: space-between;
+    }
+}

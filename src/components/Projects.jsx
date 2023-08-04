@@ -1,30 +1,22 @@
-import { projects, projectJsx } from '../Data'
+import { projects } from '../data'
+import { Link } from 'react-router-dom'
 
 export default function Projects() {
-    const projectItemElements = projects.map((projectItem, index) => {
-        return <div key={index} className='project-item-container'>
-            <a href={projectItem.link} target='_blank' className='project-link'>
-                <img src={projectItem.iconName} alt='Project Icons' className='project-icon'/>
-                <p className='project-title margin-zero'>{projectItem.name}</p>
-            </a>
+    const projectItemElements = projects.map((project, index) => (
+        <div key={index} className='project-item'>
+            <img src={project.icon} alt={project.name} className='project-icon'/>
+            <Link to={`${project.link}`}>
+                {project.name}
+            </Link>
         </div>
-    })
+    ))
 
     return (
-        <section id='projects' className='component-layout primary-color'>
-            <div className='component-child'>
-                <h2>My Projects</h2>
-                {projectJsx}
+        <section>
+            <h2>Projects</h2>
+            <div className='project-container'>
+                {projectItemElements}
             </div>
-            
-            <div className='component-child'>
-                <div className='phone phone-border'>
-                    <div className='phone-mic'></div>
-                    <div className='phone-screen phone-border'>{projectItemElements}</div>
-                    <div className='phone-button'></div>
-                </div>
-            </div>
-            
         </section>
     )
 }
