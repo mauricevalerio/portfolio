@@ -215,12 +215,12 @@ export const skillIcons = [
 /* PROJECTS ARRAY */
 export const projects = [
     {
-        name: "Scrimba Projects",
+        name: "Scrimba",
         link: '/scrimba',
         icon: scrimba
     },
     {
-        name: "Frontendmentor Challenges",
+        name: "Frontendmentor",
         link: '/frontendmentor',
         icon: frontendmentor
     }
