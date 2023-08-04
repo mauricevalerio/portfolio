@@ -1,7 +1,7 @@
 # Portfolio
 
-Single Page Application personal portfolio. Built with HTML, SCSS, and React.
+Personal portfolio. Built with HTML, SCSS, React, and React Router.
 
-See it live! [Personal Portfolio](https://mauricevalerio.dev/)
+[Personal Portfolio](https://mauricevalerio.dev/)
 
-Integrated to Netlify, Google Domains, Google Analytics, and did SEOs.
+Integrated to Netlify, Google Domains, Google Analytics, and SEO.
