@@ -10,7 +10,7 @@ export default function Scrimba() {
     ))
 
     return (
-        <section className='scrimba'>
+        <section className='page-animation'>
             <BackButton />
             <h2>Solo Projects</h2>
             <div className='project-list'>

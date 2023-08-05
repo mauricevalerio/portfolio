@@ -21,9 +21,7 @@ body {
     margin: 0 auto;
 }
 
-.frontendmentor,
-.home,
-.scrimba {
+.page-animation {
     animation: fade-in 2s;
 }
 
@@ -85,11 +83,6 @@ h2 {
 
     .skill-item {
         @extend %flex-item;
-        transition: all .2s;
-
-        &:hover {
-            transform: scale(1.05);
-        }
 
         .skill-icon {
             width: 15px;
@@ -102,13 +95,7 @@ h2 {
 
     .list-item {
         @extend %flex-item;
-        transition: all .2s;
-        text-align: center;
         flex: 1;
-
-        &:hover {
-            transform: scale(1.05);
-        }
 
         img {
             width: 50px;
@@ -137,6 +124,13 @@ h2 {
     html {
         font-size: 18px;
     }
+
+    .project-list {
+        .list-item {
+            flex: unset;
+        }
+    }
+
 }
 
 @media(min-width: base.$breakpoint-medium) {
@@ -154,4 +148,5 @@ h2 {
     .header {
         justify-content: space-between;
     }
+
 }

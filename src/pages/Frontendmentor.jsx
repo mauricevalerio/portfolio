@@ -10,7 +10,7 @@ export default function Frontendmentor() {
     ))
 
     return (
-        <section className='frontendmentor'>
+        <section className='page-animation'>
             <BackButton />
             <h2>Frontendmentor Challenges</h2>
             <div className='project-list'>
