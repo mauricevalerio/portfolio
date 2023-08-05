@@ -29,7 +29,7 @@
   padding: 0;
 }
 
-.social-container, .skill-container, .scrimba-container, .project-container {
+.social-container, .skill-container, .project-list, .project-container {
   display: flex;
   row-gap: 0.5em;
   column-gap: 0.4em;
@@ -37,7 +37,7 @@
   margin: 0.5em 0;
 }
 
-.skill-container .skill-item, .scrimba-container .scrimba-item, .project-container .project-item {
+.skill-container .skill-item, .project-list .list-item, .project-container .project-item {
   display: flex;
   align-items: center;
   column-gap: 0.5em;
@@ -61,6 +61,7 @@ body {
   margin: 0 auto;
 }
 
+.frontendmentor,
 .home,
 .scrimba {
   animation: fade-in 2s;
@@ -132,15 +133,15 @@ h2 {
   width: 15px;
 }
 
-.scrimba-container .scrimba-item {
+.project-list .list-item {
   transition: all 0.2s;
   text-align: center;
   flex: 1;
 }
-.scrimba-container .scrimba-item:hover {
+.project-list .list-item:hover {
   transform: scale(1.05);
 }
-.scrimba-container .scrimba-item img {
+.project-list .list-item img {
   width: 50px;
 }
 

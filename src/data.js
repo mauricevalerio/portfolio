@@ -42,7 +42,6 @@ import tenzies from './assets/project-item-icons/tenzies.svg'
 import LogoPlaceholder from './assets/project-item-icons/logo-placeholder.svg'
 
 export const scrimbaSolo = [
-
     {
         name: 'Hometown',
         icon: LogoPlaceholder,
@@ -117,6 +116,39 @@ export const scrimbaSolo = [
         name: 'Quizzical',
         icon: quizzical,
         link: 'https://qu1zz1cal.netlify.app/'
+    },
+]
+
+export const frontendmentorProjects = [
+    {
+        name: 'QR Code Component',
+        icon: LogoPlaceholder,
+        link: 'https://frontendmentor-quick-response-code.netlify.app/'
+    },
+    {
+        name: 'Age Calculator',
+        icon: LogoPlaceholder,
+        link: 'https://howyoungareyou.netlify.app/'
+    },
+    {
+        name: 'Newsletter Sign Up',
+        icon: LogoPlaceholder,
+        link: 'https://newsletter-spammer.netlify.app/'
+    },
+    {
+        name: 'Project Tracking Intro',
+        icon: LogoPlaceholder,
+        link: 'https://project-tracker-intro.netlify.app/'
+    },
+    {
+        name: 'Interactive Comments Section',
+        icon: LogoPlaceholder,
+        link: 'https://interactive-social-media-comments.netlify.app/'
+    },
+    {
+        name: 'IP Address Tracker',
+        icon: LogoPlaceholder,
+        link: 'https://trackingip.netlify.app/'
     },
 ]
 
