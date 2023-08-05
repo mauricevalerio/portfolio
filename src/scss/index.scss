@@ -15,8 +15,7 @@ body {
     background-color: base.$background-color;
     font-family: 'Barlow Condensed', sans-serif;
     font-family: 'Ropa Sans', sans-serif;
-    padding: 1rem;
-    height: 100vh;
+    padding: 1.125rem;
     max-width: 1024px;
     margin: 0 auto;
 }
@@ -40,7 +39,7 @@ h1 {
 }
 
 h2 {
-    @include base.header-text($font-size: 1.75rem);
+    @include base.header-text($font-size: 1.75rem, $primary-color: base.$tertiary-color);
 }
 
 .avatar {
@@ -48,7 +47,7 @@ h2 {
 }
 
 .avatar-laptop {
-    max-width: 550px;
+    max-width: 500px;
     display: block;
     margin: 0 auto;
 }
@@ -60,7 +59,7 @@ h2 {
 }
 
 .footer {
-    margin: 0.5em 0;
+    margin: 1em 0;
 
     p {
         @include base.header-text($font-size: 1.135rem, $line-height: 1.25);
@@ -71,6 +70,7 @@ h2 {
 .social-container {
     @extend %flex-container;
     align-items: center;
+    column-gap: 1.125em;
 
     .social-icon {
         width: 30px;
@@ -90,63 +90,48 @@ h2 {
     }
 }
 
-.project-list {
+.projects-container {
     @extend %flex-container;
 
-    .list-item {
+    .project-item {
         @extend %flex-item;
         flex: 1;
 
-        img {
+        .project-icon {
             width: 50px;
         }
     }
 }
 
-.project-container {
+.dropdown-container {
     @extend %flex-container;
-    font-size: 1.1rem;
+    align-items: center;
 
-    .project-item {
-        @extend %flex-item;
+    select {
+        @extend %select-style;
+    }
 
-        .project-icon {
-            width: 30px;
-        }
+    .repo-link {
+        width: 35px;
     }
 }
 
 @media(min-width: base.$breakpoint-small) {
-    body {
-        padding: 2rem;
-    }
-
     html {
         font-size: 18px;
     }
-
-    .project-list {
-        .list-item {
-            flex: unset;
-        }
-    }
-
 }
 
 @media(min-width: base.$breakpoint-medium) {
 
-    .header,
-    body {
+    .header {
         display: flex;
         align-items: center;
-    }
-
-    body {
-        justify-content: center;
-    }
-
-    .header {
         justify-content: space-between;
     }
 
+    .projects-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
 }

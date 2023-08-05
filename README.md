@@ -1,6 +1,6 @@
 # Portfolio
 
-Personal portfolio. Built with HTML, SCSS, React, and React Router.
+Personal portfolio. Built with HTML, SCSS, and React.
 
 [Personal Portfolio](https://mauricevalerio.dev/)
 

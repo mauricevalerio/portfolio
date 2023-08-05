@@ -6,7 +6,7 @@ $breakpoint-small: 480px;
 $breakpoint-medium: 768px;
 $breakpoint-large: 1024px;
 
-@mixin header-text($font-size, $line-height: 1.25) {
+@mixin header-text($font-size, $line-height: 1.25, $primary-color: $primary-color) {
     color: $primary-color;
     font-size: $font-size;
     line-height: $line-height;
@@ -67,4 +67,17 @@ $breakpoint-large: 1024px;
     &:hover {
         transform: scale(1.05);
     }
+}
+
+%select-style {
+    color: $tertiary-color;
+    outline: 0;
+    background: $secondary-color;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    font-family: inherit;
+    font-weight: bold;
 }

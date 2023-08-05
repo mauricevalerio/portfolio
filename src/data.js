@@ -20,8 +20,6 @@ import git from './assets/language-icons/git.svg'
 import figma from './assets/language-icons/figma.svg'
 import sass from './assets/language-icons/sass.svg'
 import firebase from './assets/language-icons/firebase.svg'
-// PROJECTS DATA
-import scrimba from './assets/project-icons/scrimba.svg'
 // SCRIMBA SOLO PROJECT DATA
 import basketball from './assets/project-item-icons/basketball.svg'
 import PasswordGenerator from './assets/project-item-icons/password-generator.svg'
@@ -119,6 +117,34 @@ export const scrimbaSolo = [
     },
 ]
 
+export const scrimbaGuided = [
+    {
+        name: 'Grocery Cart',
+        icon: GroceryCart,
+        link: 'https://firebase-grocerylist-mobile.netlify.app/'
+    },
+    {
+        name: 'Twimba',
+        icon: twimba,
+        link: 'https://tw1mba.netlify.app/'
+    },
+    {
+        name: 'RPG Card Game',
+        icon: rpg,
+        link: 'https://magickards.netlify.app/'
+    },
+    {
+        name: 'Tenzies',
+        icon: tenzies,
+        link: 'https://tenz1es.netlify.app/'
+    },
+    {
+        name: 'Photo E-commerce',
+        icon: LogoPlaceholder,
+        link: 'https://photo-ecommerce.netlify.app/'
+    },
+]
+
 export const frontendmentorProjects = [
     {
         name: 'QR Code Component',
@@ -141,7 +167,7 @@ export const frontendmentorProjects = [
         link: 'https://project-tracker-intro.netlify.app/'
     },
     {
-        name: 'Interactive Comments Section',
+        name: 'Interactive Comments',
         icon: LogoPlaceholder,
         link: 'https://interactive-social-media-comments.netlify.app/'
     },
@@ -241,19 +267,5 @@ export const skillIcons = [
     {
         name: 'MongoDB',
         icon: mongodb
-    }
-]
-
-/* PROJECTS ARRAY */
-export const projects = [
-    {
-        name: "Scrimba",
-        link: '/scrimba',
-        icon: scrimba
-    },
-    {
-        name: "Frontendmentor",
-        link: '/frontendmentor',
-        icon: frontendmentor
     }
 ]
