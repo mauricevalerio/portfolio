@@ -60,6 +60,16 @@ export const scrimbaProjects = [
 
 export const frontendmentorProjects = [
     {
+        name: 'REST Countries',
+        icon: LogoPlaceholder,
+        link: 'https://a-whole-new-world.netlify.app/'
+    },
+    {
+        name: 'Static Job Listing',
+        icon: LogoPlaceholder,
+        link: 'https://static-job-finder.netlify.app/'
+    },
+    {
         name: 'Interactive Comments',
         icon: LogoPlaceholder,
         link: 'https://interactive-social-media-comments.netlify.app/'
