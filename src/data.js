@@ -21,55 +21,20 @@ import figma from './assets/language-icons/figma.svg'
 import sass from './assets/language-icons/sass.svg'
 import firebase from './assets/language-icons/firebase.svg'
 import reactrouter from './assets/language-icons/react-router.svg'
-// SCRIMBA SOLO PROJECT DATA
-import basketball from './assets/project-item-icons/basketball.svg'
+// SCRIMBA PROJECTS DATA
 import PasswordGenerator from './assets/project-item-icons/password-generator.svg'
-import FreddieLogo from './assets/project-item-icons/freddie.svg'
-import oldagram from './assets/project-item-icons/oldagram.svg'
 import food from './assets/project-item-icons/food.svg'
-import tindog from './assets/project-item-icons/tindog.svg'
-import ColorScheme from './assets/project-item-icons/color-scheme.svg'
 import MovieWatchlist from './assets/project-item-icons/movie-watchlist.svg'
-import TravelJournal from './assets/project-item-icons/travel-journal.svg'
 import quizzical from './assets/project-item-icons/quizzical.svg'
-// SCRIMBA GUIDED PROJECT DATA
-import GroceryCart from './assets/project-item-icons/grocery-cart.svg'
-import twimba from './assets/project-item-icons/twimba.svg'
-import rpg from './assets/project-item-icons/rpg-card-game.svg'
 import tenzies from './assets/project-item-icons/tenzies.svg'
 
 import LogoPlaceholder from './assets/project-item-icons/logo-placeholder.svg'
 
-export const scrimbaSolo = [
-    {
-        name: 'Hometown',
-        icon: LogoPlaceholder,
-        link: 'https://probinsya.netlify.app/'
-    },
-    {
-        name: 'Scoreboard',
-        icon: basketball,
-        link: 'https://basketbol-scoreboard.netlify.app/'
-    },
+export const scrimbaProjects = [
     {
         name: 'Password Generator',
         icon: PasswordGenerator,
         link: 'https://passw0rdg3n3rat0r.netlify.app/'
-    },
-    {
-        name: 'Unit Converter',
-        icon: LogoPlaceholder,
-        link: 'https://un1t-converter.netlify.app/'
-    },
-    {
-        name: 'Endorsements',
-        icon: FreddieLogo,
-        link: 'https://we-are-the-champions-endorsements.netlify.app/'
-    },
-    {
-        name: 'Oldagram',
-        icon: oldagram,
-        link: 'https://0ldagram.netlify.app/'
     },
     {
         name: 'Food Order',
@@ -77,96 +42,23 @@ export const scrimbaSolo = [
         link: 'https://f00d-orders.netlify.app/'
     },
     {
-        name: 'Learning Journal',
-        icon: LogoPlaceholder,
-        link: 'https://learning-j0urnal.netlify.app/'
-    },
-    {
-        name: 'Tindog',
-        icon: tindog,
-        link: 'https://t1ndog.netlify.app/'
-    },
-    {
-        name: 'Color Scheme',
-        icon: ColorScheme,
-        link: 'https://c0l0r-scheme-gen.netlify.app/'
-    },
-    {
-        name: 'StopDropRoll',
-        icon: LogoPlaceholder,
-        link: 'https://stopdroproll.netlify.app/'
-    },
-    {
         name: 'Watchlist',
         icon: MovieWatchlist,
         link: 'https://mauvie.netlify.app/'
-    },
-    {
-        name: 'Business Card',
-        icon: LogoPlaceholder,
-        link: 'https://maurice-business-card.netlify.app/'
-    },
-    {
-        name: 'Travel Journal',
-        icon: TravelJournal,
-        link: 'https://travel-site-journal.netlify.app/'
     },
     {
         name: 'Quizzical',
         icon: quizzical,
         link: 'https://qu1zz1cal.netlify.app/'
     },
-]
-
-export const scrimbaGuided = [
-    {
-        name: 'Grocery Cart',
-        icon: GroceryCart,
-        link: 'https://firebase-grocerylist-mobile.netlify.app/'
-    },
-    {
-        name: 'Twimba',
-        icon: twimba,
-        link: 'https://tw1mba.netlify.app/'
-    },
-    {
-        name: 'RPG Card Game',
-        icon: rpg,
-        link: 'https://magickards.netlify.app/'
-    },
     {
         name: 'Tenzies',
         icon: tenzies,
         link: 'https://tenz1es.netlify.app/'
-    },
-    {
-        name: 'Photo E-commerce',
-        icon: LogoPlaceholder,
-        link: 'https://photo-ecommerce.netlify.app/'
-    },
+    }
 ]
 
 export const frontendmentorProjects = [
-    {
-        name: 'QR Code Component',
-        icon: LogoPlaceholder,
-        link: 'https://frontendmentor-quick-response-code.netlify.app/'
-    },
-    {
-        name: 'Age Calculator',
-        icon: LogoPlaceholder,
-        link: 'https://howyoungareyou.netlify.app/'
-    },
-    {
-        name: 'Newsletter Sign Up',
-        icon: LogoPlaceholder,
-        link: 'https://newsletter-spammer.netlify.app/'
-    },
-    {
-        name: 'Project Tracking Intro',
-        icon: LogoPlaceholder,
-        link: 'https://project-tracker-intro.netlify.app/'
-    },
     {
         name: 'Interactive Comments',
         icon: LogoPlaceholder,
@@ -242,7 +134,7 @@ export const skillIcons = [
         icon: sass
     },
     {
-        name: 'Tailwind CSS',
+        name: 'Tailwind',
         icon: tailwindcss
     },
     {
