@@ -20,6 +20,7 @@ import git from './assets/language-icons/git.svg'
 import figma from './assets/language-icons/figma.svg'
 import sass from './assets/language-icons/sass.svg'
 import firebase from './assets/language-icons/firebase.svg'
+import reactrouter from './assets/language-icons/react-router.svg'
 // SCRIMBA SOLO PROJECT DATA
 import basketball from './assets/project-item-icons/basketball.svg'
 import PasswordGenerator from './assets/project-item-icons/password-generator.svg'
@@ -225,6 +226,10 @@ export const skillIcons = [
         icon: react
     },
     {
+        name: 'React Router',
+        icon: reactrouter
+    },
+    {
         name: 'Git',
         icon: git
     },
@@ -269,3 +274,4 @@ export const skillIcons = [
         icon: mongodb
     }
 ]
+
