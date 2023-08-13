@@ -1,20 +1,24 @@
 $background-color: hsl(207, 26%, 17%);
-$primary-color: #565656;
-$secondary-color: #C09F80;
-$tertiary-color: #76323F;
+$primary-text-color: hsl(0, 0%, 100%);
+$element-color: hsl(209, 23%, 22%);
+$secondary-text-color: #c26850;
 $breakpoint-small: 480px;
 $breakpoint-medium: 768px;
 $breakpoint-large: 1024px;
 
-@mixin header-text($font-size, $line-height: 1.25, $primary-color: $primary-color) {
-    color: $primary-color;
+@mixin header-text($font-size, $line-height: 1.25, $primary-text-color: $primary-text-color) {
+    color: $primary-text-color;
     font-size: $font-size;
     line-height: $line-height;
 }
 
+%box-shadow {
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
 %link-hover {
     a {
-        color: $tertiary-color;
+        color: $secondary-text-color;
         font-weight: bold;
         text-decoration: none;
         position: relative;
@@ -28,7 +32,7 @@ $breakpoint-large: 1024px;
             height: 3px;
             bottom: 0;
             left: 0;
-            background-color: $tertiary-color;
+            background-color: $secondary-text-color;
             transform-origin: bottom right;
             transition: transform 0.25s ease-out;
         }
@@ -60,8 +64,8 @@ $breakpoint-large: 1024px;
     column-gap: 0.5em;
     border-radius: 10px;
     padding: 0.25em 0.5em;
-    color: $primary-color;
-    background-color: $secondary-color;
+    color: $primary-text-color;
+    background-color: $element-color;
     transition: all .2s;
 
     &:hover {
@@ -70,9 +74,9 @@ $breakpoint-large: 1024px;
 }
 
 %select-style {
-    color: $tertiary-color;
+    color: $secondary-text-color;
     outline: 0;
-    background: $secondary-color;
+    background: $element-color;
     cursor: pointer;
     border: none;
     border-radius: 5px;

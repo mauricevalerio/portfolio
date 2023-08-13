@@ -38,7 +38,7 @@ h1 {
 }
 
 h2 {
-    @include base.header-text($font-size: 1.75rem, $primary-color: base.$tertiary-color);
+    @include base.header-text($font-size: 1.75rem, $primary-text-color: base.$secondary-text-color);
 }
 
 .avatar {
@@ -82,6 +82,7 @@ h2 {
 
     .skill-item {
         @extend %flex-item;
+        @extend %box-shadow;
 
         .skill-icon {
             width: 15px;

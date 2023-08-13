@@ -89,11 +89,6 @@ export const socialMedia = [
         link: 'mailto:mauricealbertvalerio@gmail.com'
     },
     {
-        name: 'GitHub Icon',
-        icon: github,
-        link: 'https://github.com/mauricevalerio',
-    },
-    {
         name: 'LinkedIn Icon',
         icon: linkedin,
         link: 'https://www.linkedin.com/in/maurice-albert-valerio/',
@@ -102,6 +97,11 @@ export const socialMedia = [
         name: 'Frontendmentor Icon',
         icon: frontendmentor,
         link: 'https://www.frontendmentor.io/profile/mauricevalerio'
+    },
+    {
+        name: 'GitHub Icon',
+        icon: github,
+        link: 'https://github.com/mauricevalerio',
     },
 ]
 
