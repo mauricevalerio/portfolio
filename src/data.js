@@ -22,13 +22,11 @@ import sass from './assets/language-icons/sass.svg'
 import firebase from './assets/language-icons/firebase.svg'
 import reactrouter from './assets/language-icons/react-router.svg'
 // SCRIMBA PROJECTS DATA
-import PasswordGenerator from './assets/project-item-icons/password-generator.svg'
-import food from './assets/project-item-icons/food.svg'
-import MovieWatchlist from './assets/project-item-icons/movie-watchlist.svg'
-import quizzical from './assets/project-item-icons/quizzical.svg'
-import tenzies from './assets/project-item-icons/tenzies.svg'
-
-import LogoPlaceholder from './assets/project-item-icons/logo-placeholder.svg'
+import PasswordGenerator from './assets/project-icons/password-generator.svg'
+import food from './assets/project-icons/food.svg'
+import MovieWatchlist from './assets/project-icons/movie-watchlist.svg'
+import quizzical from './assets/project-icons/quizzical.svg'
+import tenzies from './assets/project-icons/tenzies.svg'
 
 export const scrimbaProjects = [
     {
@@ -61,22 +59,22 @@ export const scrimbaProjects = [
 export const frontendmentorProjects = [
     {
         name: 'REST Countries',
-        icon: LogoPlaceholder,
+        icon: '',
         link: 'https://a-whole-new-world.netlify.app/'
     },
     {
         name: 'Static Job Listing',
-        icon: LogoPlaceholder,
+        icon: '',
         link: 'https://static-job-finder.netlify.app/'
     },
     {
         name: 'Interactive Comments',
-        icon: LogoPlaceholder,
+        icon: '',
         link: 'https://interactive-social-media-comments.netlify.app/'
     },
     {
         name: 'IP Address Tracker',
-        icon: LogoPlaceholder,
+        icon: '',
         link: 'https://trackingip.netlify.app/'
     },
 ]
