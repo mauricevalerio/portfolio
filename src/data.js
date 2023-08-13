@@ -3,7 +3,6 @@ import github from './assets/social-icons/github.svg'
 import mail from './assets/social-icons/mail.svg'
 import linkedin from './assets/social-icons/linkedin.svg'
 import frontendmentor from './assets/social-icons/frontendmentor.svg'
-import fileresume from './assets/social-icons/file-resume.svg'
 // SKILLS DATA
 import html from './assets/language-icons/html5.svg'
 import css from './assets/language-icons/css3.svg'
@@ -104,11 +103,6 @@ export const socialMedia = [
         icon: frontendmentor,
         link: 'https://www.frontendmentor.io/profile/mauricevalerio'
     },
-    {
-        name: 'File Icon',
-        icon: fileresume,
-        link: './MauriceAlbertValerio_Resume.pdf'
-    }
 ]
 
 // SKILLS ARRAY
