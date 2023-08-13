@@ -1,37 +1,33 @@
-import AvatarSkill from '../assets/avatar-skill.svg'
-import { scrimbaProjects, frontendmentorProjects } from '../data'
-import { useState } from 'react'
+import { projectList } from '../data'
 
 export default function Projects() {
-    const [projectList, setProjectList] = useState('scrimba-projects')
 
-    const projectElements = 
-    (projectList === 'scrimba-projects' ? scrimbaProjects : frontendmentorProjects).map((item, index) => (
-        <div key={index} className='project-item'>
-            <img src={item.icon} alt={`${item.name} logo`} className='project-icon'/>
-            <a href={item.link} target='_blank'>{item.name}</a>
+    const projectElements = projectList.map((item, index) => (
+        <div key={index} className='project-item-container'>
+            <img src={item.img} alt={`${item.name} Project`} className='project-item-image'/>
+            
+            <div className='project-item-info'>
+                <h3>{item.name}</h3>
+                <p className='project-item-description'>{item.description}</p>
+
+                <div className='tech-stack-container'>
+                    {item.technologies.map((tech, index) => <img src={tech} className='tech-stack-item' key={index}/> )}
+                </div>
+
+                <div className='project-link-container'>
+                    <a  href={item.link} target='_blank' className='project-item-link'>Live Site</a>
+                    <a href={item.repo} target='_blank' className='project-item-link'>Code</a>
+                </div>
+            </div>
         </div>
     ))
-
-    const handleChange = (e) => setProjectList(e.target.value)
     
     return (
-        <section>
-            <img src={AvatarSkill} alt='Avatar using laptop' className='avatar-laptop'/>
-
-            <div className='dropdown-container'>
-                <select name='projectList'
-                    value={projectList}
-                    onChange={handleChange}
-                >
-                    <option value='scrimba-projects'>Scrimba Projects</option>
-                    <option value='frontendmentor'>Frontendmentor Challenges</option>
-                </select>
-            </div>
-
+        <>
+            <h2 className='project-header'>Projects</h2>
             <div className='projects-container'>
                 {projectElements}
             </div>
-        </section>
+        </>
     )
 }

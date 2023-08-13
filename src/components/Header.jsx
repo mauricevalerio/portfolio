@@ -12,8 +12,8 @@ export default function Header() {
     return (
         <header className='header'>
             <div>
-                <h1>Maurice Valerio</h1>
-                <h2>Junior Front End Developer</h2>
+                <h1 className='name'>Maurice Valerio</h1>
+                <h2 className='title'>Junior Front End Developer</h2>
 
                 <div className='social-container'>
                     {socialMediaElements}

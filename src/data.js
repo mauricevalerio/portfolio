@@ -22,61 +22,73 @@ import sass from './assets/language-icons/sass.svg'
 import firebase from './assets/language-icons/firebase.svg'
 import reactrouter from './assets/language-icons/react-router.svg'
 // SCRIMBA PROJECTS DATA
-import PasswordGenerator from './assets/project-icons/password-generator.svg'
-import food from './assets/project-icons/food.svg'
-import MovieWatchlist from './assets/project-icons/movie-watchlist.svg'
-import quizzical from './assets/project-icons/quizzical.svg'
-import tenzies from './assets/project-icons/tenzies.svg'
 
-export const scrimbaProjects = [
+export const projectList = [
+    // {
+    //     name: 'Password Generator',
+    //     link: 'https://passw0rdg3n3rat0r.netlify.app/'
+    // },
+    // {
+    //     name: 'Food Order',
+    //     link: 'https://f00d-orders.netlify.app/'
+    // },
     {
-        name: 'Password Generator',
-        icon: PasswordGenerator,
-        link: 'https://passw0rdg3n3rat0r.netlify.app/'
-    },
-    {
-        name: 'Food Order',
-        icon: food,
-        link: 'https://f00d-orders.netlify.app/'
-    },
-    {
-        name: 'Watchlist',
-        icon: MovieWatchlist,
-        link: 'https://mauvie.netlify.app/'
+        name: 'Movie Watchlist',
+        description: 'View trending movies and TVs and add them to your watchlist.',
+        img: './project-images/mauvie.png',
+        technologies: [reactrouter, react, tailwindcss, html, css, javascript],
+        link: 'https://mauvie.netlify.app/',
+        repo: 'https://github.com/mauricevalerio/scrimba-solo-projects/tree/main/m9-movie-tv-watchlist'
     },
     {
         name: 'Quizzical',
-        icon: quizzical,
-        link: 'https://qu1zz1cal.netlify.app/'
+        description: 'Test every bit of your brain cells in this trivia quiz game. Select the number of questions, category, and difficulty to start!',
+        img: './project-images/quizzical.png',
+        technologies: [react, html, css, javascript],
+        link: 'https://qu1zz1cal.netlify.app/',
+        repo: 'https://github.com/mauricevalerio/scrimba-solo-projects/tree/main/m11-quizzical'
     },
     {
         name: 'Tenzies',
-        icon: tenzies,
-        link: 'https://tenz1es.netlify.app/'
-    }
-]
+        description: 'Software version of the board game tenzies. Roll and match all dices as fast as possible and see yourself up on the leaderboards!',
+        img: './project-images/tenzies.png',
+        technologies: [react, html, css, javascript],
+        link: 'https://tenz1es.netlify.app/',
+        repo: 'https://github.com/mauricevalerio/scrimba-guided-projects/tree/main/m11-tenzies'
+    },
+    {
+        name: 'Frontendmentor REST Countries List',
+        description: 'Discover each country and its bordering countries by searching by name or filtering by regions. Switch also the theme website between dark and light modes.',
+        img: './project-images/rest-countries.png',
+        technologies: [typescript, react, reactrouter, sass, html, css],
+        link: 'https://a-whole-new-world.netlify.app/',
+        repo: 'https://github.com/mauricevalerio/frontendmentor-challenges/tree/main/rest-countries-api-with-color-theme-switcher'
+    },
+    {
+        name: 'Frontendmentor IP Address Tracker',
+        description: 'Track and locate an IP address or domain around the world on a map.',
+        img: './project-images/ip-address-tracker.png',
+        technologies: [typescript, react, bulma, html, css],
+        link: 'https://trackingip.netlify.app/',
+        repo: 'https://github.com/mauricevalerio/frontendmentor-challenges/tree/main/ip-address-tracker'
+    },
+    {
+        name: 'Frontendmentor Static Job Listing',
+        description: 'Filter jobs using tags in this static job listing site.',
+        img: './project-images/static-job-finder.png',
+        technologies: [typescript, react, sass, html, css],
+        link: 'https://static-job-finder.netlify.app/',
+        repo: 'https://github.com/mauricevalerio/frontendmentor-challenges/tree/main/static-job-listings'
+    },
+    {
+        name: 'Frontendmentor Interactive Comments',
+        description: 'Reply, edit, delete, and add comments in this static interactive comments section page.',
+        img: './project-images/interactive-comments.png',
+        technologies: [react, bootstrap, html, css, javascript],
+        link: 'https://interactive-social-media-comments.netlify.app/',
+        repo: 'https://github.com/mauricevalerio/frontendmentor-challenges/tree/main/interactive-comments-section-main'
+    },
 
-export const frontendmentorProjects = [
-    {
-        name: 'REST Countries',
-        icon: '',
-        link: 'https://a-whole-new-world.netlify.app/'
-    },
-    {
-        name: 'Static Job Listing',
-        icon: '',
-        link: 'https://static-job-finder.netlify.app/'
-    },
-    {
-        name: 'Interactive Comments',
-        icon: '',
-        link: 'https://interactive-social-media-comments.netlify.app/'
-    },
-    {
-        name: 'IP Address Tracker',
-        icon: '',
-        link: 'https://trackingip.netlify.app/'
-    },
 ]
 
 // SOCIAL MEDIA ARRAY
