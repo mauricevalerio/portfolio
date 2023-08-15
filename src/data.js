@@ -84,7 +84,7 @@ export const projectList = [
         name: 'Frontendmentor Interactive Comments',
         description: 'Reply, edit, delete, and add comments in this static interactive comments section page.',
         img: './project-images/interactive-comments.png',
-        technologies: [react, bootstrap, html, css, javascript],
+        technologies: [typescript, react, bootstrap, html, css],
         link: 'https://interactive-social-media-comments.netlify.app/',
         repo: 'https://github.com/mauricevalerio/frontendmentor-challenges/tree/main/interactive-comments-section-main'
     },
