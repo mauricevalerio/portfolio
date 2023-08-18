@@ -57,7 +57,15 @@ export const projectList = [
         repo: 'https://github.com/mauricevalerio/scrimba-guided-projects/tree/main/m11-tenzies'
     },
     {
-        name: 'Frontendmentor REST Countries List',
+        name: 'Rock, Paper, Scissors',
+        description: 'Can you beat a computer on a rock, paper, scissors game? Try out this game to know! Also has an option to set a game set score.',
+        img: './project-images/rock-paper-scissors.png',
+        technologies: [typescript, react, bootstrap, sass, html, css],
+        link: 'https://r0ck-pap3r-scissors.netlify.app/',
+        repo: 'https://github.com/mauricevalerio/frontendmentor-challenges/tree/main/rock-paper-scissors'
+    },
+    {
+        name: 'Country List',
         description: 'Discover each country and its bordering countries by searching by name or filtering by regions. Switch also the theme website between dark and light modes.',
         img: './project-images/rest-countries.png',
         technologies: [typescript, react, reactrouter, sass, html, css],
@@ -65,7 +73,7 @@ export const projectList = [
         repo: 'https://github.com/mauricevalerio/frontendmentor-challenges/tree/main/rest-countries-api-with-color-theme-switcher'
     },
     {
-        name: 'Frontendmentor IP Address Tracker',
+        name: 'IP Address Tracker',
         description: 'Track and locate an IP address or domain around the world on a map.',
         img: './project-images/ip-address-tracker.png',
         technologies: [typescript, react, bulma, html, css],
@@ -73,7 +81,7 @@ export const projectList = [
         repo: 'https://github.com/mauricevalerio/frontendmentor-challenges/tree/main/ip-address-tracker'
     },
     {
-        name: 'Frontendmentor Static Job Listing',
+        name: 'Static Job Listing',
         description: 'Filter jobs using tags in this static job listing site.',
         img: './project-images/static-job-finder.png',
         technologies: [typescript, react, sass, html, css],
@@ -81,7 +89,7 @@ export const projectList = [
         repo: 'https://github.com/mauricevalerio/frontendmentor-challenges/tree/main/static-job-listings'
     },
     {
-        name: 'Frontendmentor Interactive Comments',
+        name: 'Interactive Comments',
         description: 'Reply, edit, delete, and add comments in this static interactive comments section page.',
         img: './project-images/interactive-comments.png',
         technologies: [typescript, react, bootstrap, html, css],
