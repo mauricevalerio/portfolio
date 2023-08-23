@@ -96,6 +96,14 @@ export const projectList = [
         link: 'https://interactive-social-media-comments.netlify.app/',
         repo: 'https://github.com/mauricevalerio/frontendmentor-challenges/tree/main/interactive-comments-section-main'
     },
+    {
+        name: 'Easybank Landing Page',
+        description: 'Easybank landing and infopage. Next generation banking.',
+        img: './project-images/easybank-landing-page.png',
+        technologies: [typescript, react, html, sass],
+        link: 'https://izibank.netlify.app/',
+        repo: 'https://github.com/mauricevalerio/frontendmentor-landing-pages/tree/main/easybank-landing-page'
+    },
 
 ]
 
