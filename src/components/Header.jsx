@@ -13,7 +13,7 @@ export default function Header() {
         <header className='header'>
             <div>
                 <h1 className='name'>Maurice Valerio</h1>
-                <h2 className='title'>Junior Front End Developer</h2>
+                <h2 className='title'>Junior Full Stack Developer</h2>
 
                 <div className='social-container'>
                     {socialMediaElements}
