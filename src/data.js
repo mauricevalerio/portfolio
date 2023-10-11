@@ -167,6 +167,10 @@ export const skillIcons = [
         icon: reactrouter
     },
     {
+        name: 'Redux',
+        icon: redux
+    },
+    {
         name: 'Git',
         icon: git
     },
