@@ -21,6 +21,7 @@ import figma from './assets/language-icons/figma.svg'
 import sass from './assets/language-icons/sass.svg'
 import firebase from './assets/language-icons/firebase.svg'
 import reactrouter from './assets/language-icons/react-router.svg'
+import redux from './assets/language-icons/redux.svg'
 // SCRIMBA PROJECTS DATA
 
 export const projectList = [
@@ -32,6 +33,14 @@ export const projectList = [
     //     name: 'Food Order',
     //     link: 'https://f00d-orders.netlify.app/'
     // },
+    {
+        name: 'Kanban Task Management',
+        description: 'Track your project progress or your own personal to-do list in this app',
+        img: './project-images/kanban-task-management.png',
+        technologies: [redux, react, typescript, bootstrap, tailwindcss, html, css],
+        link: 'https://kanbantaskmgmt.netlify.app/',
+        repo: 'https://github.com/mauricevalerio/frontendmentor-challenges/tree/main/kanban-task-management'
+    },
     {
         name: 'Movie Watchlist',
         description: 'View trending movies and TVs and add them to your watchlist.',
