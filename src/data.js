@@ -19,7 +19,6 @@ import typescript from './assets/language-icons/typescript.svg'
 import git from './assets/language-icons/git.svg'
 import figma from './assets/language-icons/figma.svg'
 import sass from './assets/language-icons/sass.svg'
-import firebase from './assets/language-icons/firebase.svg'
 import reactrouter from './assets/language-icons/react-router.svg'
 import redux from './assets/language-icons/redux.svg'
 // SCRIMBA PROJECTS DATA
@@ -151,6 +150,10 @@ export const skillIcons = [
         icon: css
     },
     {
+        name: 'SASS/SCSS',
+        icon: sass
+    },
+    {
         name: 'JavaScript',
         icon: javascript
     },
@@ -171,40 +174,32 @@ export const skillIcons = [
         icon: redux
     },
     {
-        name: 'Git',
-        icon: git
-    },
-    {
-        name: 'Figma',
-        icon: figma
-    },
-    {
-        name: 'SASS/SCSS',
-        icon: sass
-    },
-    {
         name: 'Tailwind',
         icon: tailwindcss
-    },
-    {
-        name: 'Bulma',
-        icon: bulma
     },
     {
         name: 'Bootstrap',
         icon: bootstrap
     },
     {
-        name: 'NodeJS',
+        name: 'Bulma',
+        icon: bulma
+    },
+    {
+        name: 'Figma',
+        icon: figma
+    },
+    {
+        name: 'Git',
+        icon: git
+    },
+    {
+        name: 'Node',
         icon: node
     },
     {
         name: 'Express',
         icon: express
-    },
-    {
-        name: 'Firebase',
-        icon: firebase
     },
     {
         name: 'SQL',
