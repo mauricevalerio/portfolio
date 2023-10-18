@@ -13,7 +13,6 @@ import node from './assets/language-icons/node.svg'
 import express from './assets/language-icons/express.svg'
 import mongodb from './assets/language-icons/mongodb.svg'
 import sql from './assets/language-icons/sql.svg'
-import bulma from './assets/language-icons/bulma.svg'
 import tailwindcss from './assets/language-icons/tailwindcss.svg'
 import typescript from './assets/language-icons/typescript.svg'
 import git from './assets/language-icons/git.svg'
@@ -180,10 +179,6 @@ export const skillIcons = [
     {
         name: 'Bootstrap',
         icon: bootstrap
-    },
-    {
-        name: 'Bulma',
-        icon: bulma
     },
     {
         name: 'Figma',
