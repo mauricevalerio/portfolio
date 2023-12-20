@@ -166,24 +166,8 @@ export const skillIcons = [
         icon: react
     },
     {
-        name: 'React Router',
-        icon: reactrouter
-    },
-    {
         name: 'Redux',
         icon: redux
-    },
-    {
-        name: 'Tailwind',
-        icon: tailwindcss
-    },
-    {
-        name: 'Bootstrap',
-        icon: bootstrap
-    },
-    {
-        name: 'Bulma',
-        icon: bulma
     },
     {
         name: 'Figma',
