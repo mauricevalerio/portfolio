@@ -170,6 +170,10 @@ export const skillIcons = [
         icon: redux
     },
     {
+        name: 'SQL',
+        icon: sql
+    },
+    {
         name: 'Figma',
         icon: figma
     },
@@ -177,21 +181,5 @@ export const skillIcons = [
         name: 'Git',
         icon: git
     },
-    {
-        name: 'Node',
-        icon: node
-    },
-    {
-        name: 'Express',
-        icon: express
-    },
-    {
-        name: 'SQL',
-        icon: sql
-    },
-    {
-        name: 'MongoDB',
-        icon: mongodb
-    }
 ]
 
