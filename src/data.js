@@ -21,17 +21,53 @@ import figma from './assets/language-icons/figma.svg'
 import sass from './assets/language-icons/sass.svg'
 import reactrouter from './assets/language-icons/react-router.svg'
 import redux from './assets/language-icons/redux.svg'
-// SCRIMBA PROJECTS DATA
 
+// SKILLS ARRAY
+export const skillIcons = [
+    {
+        name: 'HTML',
+        icon: html
+    },
+    {
+        name: 'CSS',
+        icon: css
+    },
+    {
+        name: 'SASS/SCSS',
+        icon: sass
+    },
+    {
+        name: 'JavaScript',
+        icon: javascript
+    },
+    {
+        name: 'TypeScript',
+        icon: typescript
+    },
+    {
+        name: 'React',
+        icon: react
+    },
+    {
+        name: 'Redux',
+        icon: redux
+    },
+    {
+        name: 'SQL',
+        icon: sql
+    },
+    {
+        name: 'Figma',
+        icon: figma
+    },
+    {
+        name: 'Git',
+        icon: git
+    },
+]
+
+// SCRIMBA PROJECTS DATA
 export const projectList = [
-    // {
-    //     name: 'Password Generator',
-    //     link: 'https://passw0rdg3n3rat0r.netlify.app/'
-    // },
-    // {
-    //     name: 'Food Order',
-    //     link: 'https://f00d-orders.netlify.app/'
-    // },
     {
         name: 'Kanban Task Management',
         description: 'Track your project progress or your own personal to-do list in this app',
@@ -139,47 +175,5 @@ export const socialMedia = [
     },
 ]
 
-// SKILLS ARRAY
-export const skillIcons = [
-    {
-        name: 'HTML',
-        icon: html
-    },
-    {
-        name: 'CSS',
-        icon: css
-    },
-    {
-        name: 'SASS/SCSS',
-        icon: sass
-    },
-    {
-        name: 'JavaScript',
-        icon: javascript
-    },
-    {
-        name: 'TypeScript',
-        icon: typescript
-    },
-    {
-        name: 'React',
-        icon: react
-    },
-    {
-        name: 'Redux',
-        icon: redux
-    },
-    {
-        name: 'SQL',
-        icon: sql
-    },
-    {
-        name: 'Figma',
-        icon: figma
-    },
-    {
-        name: 'Git',
-        icon: git
-    },
-]
+
 
