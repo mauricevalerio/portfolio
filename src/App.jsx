@@ -6,12 +6,15 @@ import Projects from './components/Projects'
 
 export default function App() {
   return (
-    <div className='page-animation'>
-      <Header />
-      <About />
-      <Skills />
-      <Projects />
+    <>
+      <main className='page-animation'>
+        <Header />
+        <About />
+        <Skills />
+        <Projects />
+      </main>
+
       <Footer />
-    </div>
+    </>
   )
 }
