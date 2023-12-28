@@ -1,6 +1,9 @@
 export default function Footer() {
     return (
         <footer className='footer'>
+            <q cite='https://www.google.com/search?q=I+am+built+upon+the+small+things+I+do+every+day%2C+and+the+end+results+are+no+more+than+a+byproduct+of+that.&oq=I+am+built+upon+the+small+things+I+do+every+day%2C+and+the+end+results+are+no+more+than+a+byproduct+of+that.&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzI0OWowajmoAgCwAgA&sourceid=chrome&ie=UTF-8'>
+            I am built upon the small things I do every day, the end results are not more than a byproduct of that.
+            </q>
             <p>Maurice Valerio © 2023</p>
         </footer>
     )

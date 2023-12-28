@@ -58,13 +58,21 @@ main {
 }
 
 .footer {
-    margin-top: 1rem;
     text-align: center;
-    padding: .5rem 0;
+    padding: 1rem 0;
     background-color: base.$element-color;
+
+    q {
+        font-size: 1rem;
+        line-height: 1.5;
+        color: base.$primary-text-color;
+        font-weight: 500;
+    }
 
     p {
         @include base.header-text($font-size: 1rem, $line-height: 1.5);
+        color: base.$secondary-text-color;
+        font-weight: 500;
     }
 }
 
