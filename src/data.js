@@ -14,7 +14,6 @@ import bulma from './assets/language-icons/bulma.svg'
 import tailwindcss from './assets/language-icons/tailwindcss.svg'
 import typescript from './assets/language-icons/typescript.svg'
 import git from './assets/language-icons/git.svg'
-import figma from './assets/language-icons/figma.svg'
 import sass from './assets/language-icons/sass.svg'
 import reactrouter from './assets/language-icons/react-router.svg'
 import redux from './assets/language-icons/redux.svg'
@@ -30,7 +29,7 @@ export const skillIcons = [
         icon: css
     },
     {
-        name: 'SASS/SCSS',
+        name: 'SCSS',
         icon: sass
     },
     {
@@ -52,10 +51,6 @@ export const skillIcons = [
     {
         name: 'SQL',
         icon: sql
-    },
-    {
-        name: 'Figma',
-        icon: figma
     },
     {
         name: 'Git',
