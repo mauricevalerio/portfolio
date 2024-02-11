@@ -61,14 +61,6 @@ export const skillIcons = [
 // SCRIMBA PROJECTS DATA
 export const projectList = [
     {
-        name: 'Multi Step Form',
-        description: 'Sign up to a game plan using this demo form!',
-        img: './project-images/multi-step-form.png',
-        technologies: [react, typescript, sass, html, css],
-        link: 'https://multi-step-plan-form.netlify.app/',
-        repo: 'https://github.com/mauricevalerio/frontendmentor-challenges/tree/main/multi-step-form'
-    },
-    {
         name: 'Kanban Task Management',
         description: 'Track your project progress or your own personal to-do list in this app',
         img: './project-images/kanban-task-management.png',
@@ -115,6 +107,14 @@ export const projectList = [
         technologies: [typescript, react, reactrouter, sass, html, css],
         link: 'https://a-whole-new-world.netlify.app/',
         repo: 'https://github.com/mauricevalerio/frontendmentor-challenges/tree/main/rest-countries-api-with-color-theme-switcher'
+    },
+    {
+        name: 'Multi Step Form',
+        description: 'Sign up to a game plan using this demo form!',
+        img: './project-images/multi-step-form.png',
+        technologies: [react, typescript, sass, html, css],
+        link: 'https://multi-step-plan-form.netlify.app/',
+        repo: 'https://github.com/mauricevalerio/frontendmentor-challenges/tree/main/multi-step-form'
     },
     {
         name: 'IP Address Tracker',
