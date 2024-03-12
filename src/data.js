@@ -17,6 +17,7 @@ import git from './assets/language-icons/git.svg'
 import sass from './assets/language-icons/sass.svg'
 import reactrouter from './assets/language-icons/react-router.svg'
 import redux from './assets/language-icons/redux.svg'
+import astro from './assets/language-icons/astro.svg'
 
 // SKILLS ARRAY
 export const skillIcons = [
@@ -67,6 +68,14 @@ export const projectList = [
         technologies: [redux, react, typescript, bootstrap, tailwindcss, html, css],
         link: 'https://kanbantaskmgmt.netlify.app/',
         repo: 'https://github.com/mauricevalerio/frontendmentor-challenges/tree/main/kanban-task-management'
+    },
+    {
+        name: 'Pay API Multi Page',
+        description: 'Multi page website for pay API product.',
+        img: './project-images/payaapi-multi-page.png',
+        technologies: [astro, react, tailwindcss, typescript, html, css, javascript],
+        link: 'https://payableapi.vercel.app/',
+        repo: 'https://github.com/mauricevalerio/frontendmentor-challenges/tree/main/payapi-multi-page'
     },
     {
         name: 'Movie Watchlist',
