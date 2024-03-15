@@ -1,0 +1,15 @@
+---
+import { Image } from "astro:assets";
+
+type Props = {
+    name: string;
+    icon: { src: string; width: number; height: number; format: "png" | "jpg" | "jpeg" | "tiff" | "webp" | "gif" | "svg" | "avif"; }
+}
+
+const { name, icon } = Astro.props;
+---
+
+<div class="skill-item">
+    <Image src={icon} alt={name} loading={"eager"} class="skill-icon"/>
+    <span>{name}</span>
+</div>

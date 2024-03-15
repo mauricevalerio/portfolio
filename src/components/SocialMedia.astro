@@ -1,0 +1,14 @@
+---
+import { Image } from "astro:assets";
+
+type Props = {
+    name: string;
+    iconPath: { src: string; width: number; height: number; format: "png" | "jpg" | "jpeg" | "tiff" | "webp" | "gif" | "svg" | "avif"; }
+    link: string;
+}
+
+const { name, iconPath, link } = Astro.props;
+---
+<a href={link} target="_blank">
+    <Image src={iconPath} loading="eager" alt={name} class="social-icon"/>
+</a>
