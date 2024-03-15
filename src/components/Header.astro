@@ -1,0 +1,24 @@
+---
+import { getCollection } from "astro:content"
+import SocialMedia from "@/components/SocialMedia.astro"
+import { Image } from 'astro:assets';
+
+const headerData = await getCollection("header");
+const { data } = headerData[0]
+---
+<header class="header">
+    <div>
+        <h1 class="header-name">{data.headerText}</h1>
+        <h2 class="header-title">{data.subHeaderText}</h2>
+
+        <div class="social">
+            {
+                data.socialMedia.map(item => <SocialMedia name={item.name} iconPath={item.iconPath} link={item.link}/>)
+            }
+        </div>
+    </div>
+
+    <Image src={data.avatarImgPath} alt={data.avatarImgAlt} loading={"eager"} class="header-avatar"/>
+</header>
+
+

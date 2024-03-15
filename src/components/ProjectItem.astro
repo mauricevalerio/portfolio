@@ -1,0 +1,39 @@
+---
+import { Image } from "astro:assets";
+
+
+type Props = {
+    index: number;
+    name: string;
+    description: string;
+    imgPath: { src: string; width: number; height: number; format: "png" | "jpg" | "jpeg" | "tiff" | "webp" | "gif" | "svg" | "avif"; };
+    technologies: { src: string; width: number; height: number; format: "png" | "jpg" | "jpeg" | "tiff" | "webp" | "gif" | "svg" | "avif"; }[];
+    link: string;
+    repo: string;
+}
+
+const { index, name, description, imgPath, technologies, link, repo} = Astro.props;
+
+---
+<div class="project-grid-card">
+    <Image src={imgPath} alt={`${name} Project`} loading={index < 4 ? "eager" : "lazy"} class="project-grid-card-image"/>
+    
+    <div class="project-grid-card-inner">
+
+        <div>
+            <h3>{name}</h3>
+            <p>{description}</p>
+        </div>
+
+        <div>
+            <div class="project-grid-card-tech">
+                {technologies.map((tech => <Image src={tech} alt="Technology logo" class="project-grid-card-tech-item"/> ))}
+            </div>
+
+            <div class="project-grid-card-link">
+                <a  href={link} target="_blank" class="project-grid-card-link-item">Live Site</a>
+                <a href={repo} target="_blank" class="project-grid-card-link-item">Code</a>
+            </div>
+        </div>
+    </div>
+</div>
