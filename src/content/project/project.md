@@ -39,7 +39,7 @@ projectList:
         - "../skill-images/css3.svg"
         - "../skill-images/javascript.svg"
       link: "https://mauvie.netlify.app/"
-      repo: "https://github.com/mauricevalerio/scrimba-solo-projects/tree/main/m9-movie-tv-watchlist"
+      repo: "https://github.com/mauricevalerio/scrimba-react-projects/tree/main/m9-movie-tv-watchlist"
 
     - name: "Quizzical"
       description: "Test you knowledge in this trivia quiz game."
@@ -50,7 +50,7 @@ projectList:
         - "../skill-images/css3.svg"
         - "../skill-images/javascript.svg"
       link: "https://qu1zz1cal.netlify.app/"
-      repo: "https://github.com/mauricevalerio/scrimba-solo-projects/tree/main/m11-quizzical"
+      repo: "https://github.com/mauricevalerio/scrimba-react-projects/tree/main/m11-quizzical"
 
     - name: "Tenzies"
       description: "Roll and match all dices as fast as possible and see yourself up on the leaderboards!"
@@ -61,7 +61,7 @@ projectList:
         - "../skill-images/css3.svg"
         - "../skill-images/javascript.svg"
       link: "https://tenz1es.netlify.app/"
-      repo: "https://github.com/mauricevalerio/scrimba-guided-projects/tree/main/m11-tenzies"
+      repo: "https://github.com/mauricevalerio/scrimba-react-projects/tree/main/m11-tenzies"
 
     - name: "Rock, Paper, Scissors"
       description: "Play rock, paper, scissors with a computer."
