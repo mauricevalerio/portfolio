@@ -136,15 +136,4 @@ projectList:
         - "../skill-images/css3.svg"
       link: "https://interactive-social-media-comments.netlify.app/"
       repo: "https://github.com/mauricevalerio/frontendmentor-challenges/tree/main/interactive-comments-section-main"
-
-    - name: "Easybank Landing Page"
-      description: "Easybank Next generation banking landing page."
-      imgPath: "./images/easybank-landing-page.png"
-      technologies:
-        - "../skill-images/typescript.svg"
-        - "../skill-images/react.svg"
-        - "../skill-images/html5.svg"
-        - "../skill-images/css3.svg"
-      link: "https://izibank.netlify.app/"
-      repo: "https://github.com/mauricevalerio/frontendmentor-landing-pages/tree/main/easybank-landing-page"
 ---
