@@ -15,16 +15,6 @@ const headerCollection = defineCollection({
     })
 });
 
-const skillCollection = defineCollection({
-    type: "content",
-    schema: ({ image }) => z.object({
-        skillList: z.array(z.object({
-            name: z.string(),
-            iconPath: image()
-        }))
-    })
-});
-
 const projectCollection = defineCollection({
     type: "content",
     schema: ({ image }) => z.object({
@@ -41,6 +31,5 @@ const projectCollection = defineCollection({
 
 export const collections = {
     header: headerCollection,
-    skill: skillCollection,
     project: projectCollection
 };
