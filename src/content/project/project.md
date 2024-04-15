@@ -1,5 +1,15 @@
 ---
 projectList:
+    - name: "Hangman"
+      description: "Web based hangman game accessible also through browser smartphones."
+      imgPath: "./images/hangman.png"
+      technologies:
+        - "../skill-images/vue.svg"
+        - "../skill-images/html5.svg"
+        - "../skill-images/css3.svg"
+      link: "https://hangman-fem.vercel.app/"
+      repo: "https://github.com/mauricevalerio/frontendmentor-challenges/tree/main/hangman-game"
+
     - name: "Kanban Task Management"
       description: "Track your project progress or your own personal to-do list."
       imgPath: "./images/kanban-task-management.png"
