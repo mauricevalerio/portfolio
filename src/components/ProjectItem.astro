@@ -1,5 +1,8 @@
 ---
 import { Image } from "astro:assets";
+import type { CollectionEntry } from 'astro:content';
+import { getEntry } from 'astro:content';
+import { getEntries } from 'astro:content';
 
 
 type Props = {
@@ -7,12 +10,17 @@ type Props = {
     name: string;
     description: string;
     imgPath: { src: string; width: number; height: number; format: "png" | "jpg" | "jpeg" | "tiff" | "webp" | "gif" | "svg" | "avif"; };
-    technologies: { src: string; width: number; height: number; format: "png" | "jpg" | "jpeg" | "tiff" | "webp" | "gif" | "svg" | "avif"; }[];
+    technologies: {
+        collection: "tech",
+        slug: "astro" | "bootstrap" | "bulma" | "css" | "git" | "html" | "javascript" | "react-router" | "react" | "redux" | "sass" | "sql" | "tailwindcss" | "typescript" | "vue";
+        }[]
     link: string;
     repo: string;
 }
 
-const { index, name, description, imgPath, technologies, link, repo} = Astro.props;
+const { index, name, description, imgPath, technologies, link, repo } = Astro.props;
+
+const techEntries = await getEntries(technologies)
 
 ---
 <div class="project-grid-card">
@@ -27,7 +35,7 @@ const { index, name, description, imgPath, technologies, link, repo} = Astro.pro
 
         <div>
             <div class="project-grid-card-tech">
-                {technologies.map((tech => <Image src={tech} alt="Technology logo" class="project-grid-card-tech-item"/> ))}
+                {techEntries.map((tech => <abbr title={tech.data.name}><Image src={tech.data.techImgPath} alt={tech.data.name} class="project-grid-card-tech-item"/></abbr> ))}
             </div>
 
             <div class="project-grid-card-link">

@@ -1,4 +1,4 @@
-import { z, defineCollection } from "astro:content";
+import { z, defineCollection, reference } from "astro:content";
 
 const headerCollection = defineCollection({
     type: "content",
@@ -15,21 +15,28 @@ const headerCollection = defineCollection({
     })
 });
 
+const techCollection = defineCollection({
+    type: "content",
+    schema: ({ image }) => z.object({
+        name: z.string(),
+        techImgPath: image()
+    })
+});
+
 const projectCollection = defineCollection({
     type: "content",
     schema: ({ image }) => z.object({
-        projectList: z.array(z.object({
-            name: z.string(),
-            description: z.string(),
-            imgPath: image(),
-            technologies: z.array(image()),
-            link: z.string(),
-            repo: z.string()
-        }))
+        name: z.string(),
+        description: z.string(),
+        imgPath: image(),
+        technologies: z.array(reference("tech")),
+        link: z.string(),
+        repo: z.string()
     })
 });
 
 export const collections = {
     header: headerCollection,
-    project: projectCollection
+    project: projectCollection,
+    tech: techCollection
 };

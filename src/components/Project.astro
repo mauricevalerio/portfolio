@@ -4,19 +4,24 @@ import { getCollection } from 'astro:content'
 
 const projectCollection  = await getCollection("project");
 
-const { data } = projectCollection[0]
 ---
 <section class="project">
     <h2 class="project-header">Projects</h2>
     <div class="project-grid">
-        {data.projectList.map((item,idx) => <ProjectItem 
-        index={idx}
-        name={item.name}
-        description={item.description}
-        imgPath={item.imgPath}
-        technologies={item.technologies}
-        link={item.link}
-        repo={item.repo}
-        />)}
+        {
+            projectCollection.map((item,index) => {
+            const { name, description, imgPath, technologies, link, repo } = item.data;
+
+            return <ProjectItem 
+                    index={index}
+                    name={name}
+                    description={description}
+                    imgPath={imgPath}
+                    technologies={technologies}
+                    link={link}
+                    repo={repo}
+                    />
+            })
+        }
     </div>
 </section>
