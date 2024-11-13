@@ -2,7 +2,7 @@
 avatarImgPath: "./images/avatar.svg"
 avatarImgAlt: "Avatar doodle"
 headerText: "Maurice Valerio"
-subHeaderText: "IT Specialist"
+subHeaderText: "IT Specialist / Web Developer"
 socialMedia: 
     - name: "Mail Icon"
       iconPath: "./images/social-media-icons/mail.svg"
