@@ -2,11 +2,8 @@
 avatarImgPath: "./images/avatar.svg"
 avatarImgAlt: "Avatar doodle"
 headerText: "Maurice Valerio"
-subHeaderText: "IT Specialist / Web Developer"
+subHeaderText: "Full Stack Developer"
 socialMedia: 
-    - name: "Mail Icon"
-      iconPath: "./images/social-media-icons/mail.svg"
-      link: "mailto:mauricealbertvalerio@gmail.com"
     - name: "LinkedIn Icon"
       iconPath: "./images/social-media-icons/linkedin.svg"
       link: "https://www.linkedin.com/in/maurice-albert-valerio/"
